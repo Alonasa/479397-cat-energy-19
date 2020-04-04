@@ -1,0 +1,21 @@
+.main-nav {
+  @include none;
+
+  &__list {
+    @include none;
+    @include zero;
+  }
+
+  &__item {
+    @include t-center;
+  }
+
+  &__link {
+    @include black-three;
+    @include no-decoration;
+    @include block;
+    @include fs-20;
+    border-top: 1px solid $border-c;
+    padding: 22px;
+  }
+}

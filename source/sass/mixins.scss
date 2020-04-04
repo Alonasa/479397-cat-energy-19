@@ -2,3 +2,37 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin black-three {
+  color: #111111;
+}
+
+@mixin fs-14 {
+  font-size: 14px;
+}
+
+@mixin fs-20 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@mixin none {
+  list-style: $none;
+}
+
+@mixin no-decoration {
+  text-decoration: $none;
+}
+
+@mixin t-center {
+  text-align: center;
+}
+
+@mixin block {
+  display: block;
+  box-sizing: border-box;
+}
+
+@mixin upper {
+  text-transform: uppercase;
+}
