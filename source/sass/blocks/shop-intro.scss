@@ -1,0 +1,35 @@
+.shop-intro {
+  @include white;
+  @include centering;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat #68b738;
+  min-height: 305px;
+  display: block;
+  position: relative;
+  margin-bottom: 135px;
+
+  &__header {
+    @include zero;
+    @include fs-36;
+    @include fw-n;
+    @include centering;
+    @include t-center;
+    width: 250px;
+    padding-top: 27px;
+  }
+
+  &__description {
+    @include upper;
+    @include centering;
+    @include t-center;
+    padding-top: 22px;
+  }
+
+  &__images {
+    @include centering;
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    left: 20px;
+    top: 166px;
+  }
+}
