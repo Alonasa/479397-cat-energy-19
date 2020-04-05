@@ -1,5 +1,14 @@
 .main-nav {
   @include none;
+  position: relative;
+
+  &__toggle {
+    position: absolute;
+    width: 35px;
+    height: 29px;
+    top: -44px;
+    right: 20px;
+  }
 
   &__list {
     @include none;

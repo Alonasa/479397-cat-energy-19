@@ -1,0 +1,27 @@
+.working-principles {
+  @include zero;
+
+  &__wrapper {
+    @include w-280;
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include fs-36;
+    @include black-three;
+    @include fw-n;
+  }
+
+  &__list {
+    @include zero;
+    @include none;
+    @include Arial;
+    @include fs-14;
+    margin-top: 42px;
+  }
+
+  &__item {
+    padding-left: 80px;
+    margin-bottom: 26px;
+  }
+}

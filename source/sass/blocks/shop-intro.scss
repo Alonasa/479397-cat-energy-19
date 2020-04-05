@@ -4,7 +4,7 @@
   @include block;
   @include phone-width;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
-  min-height: 305px;
+  background-size: cover;
   position: relative;
   margin-bottom: 135px;
 
@@ -23,6 +23,7 @@
     @include centering;
     @include t-center;
     padding-top: 22px;
+    padding-bottom: 166px;
   }
 
   &__images {
