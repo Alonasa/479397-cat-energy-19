@@ -1,8 +1,5 @@
 .shop-programs {
   @include zero;
-  @include centering;
-  @include indents;
-  @include phone-width;
   @include border-box;
 
   &__selection {

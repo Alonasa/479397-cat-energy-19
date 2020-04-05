@@ -1,0 +1,72 @@
+.example {
+  @include grey-back;
+
+  &__header {
+    @include zero;
+    @include fs-36;
+    @include black-three;
+    @include fw-n;
+    padding: 29px 0 20px;
+  }
+
+  &__description {
+    @include Arial;
+    width: 266px;
+  }
+
+  &__results {
+    @include none;
+    @include zero;
+  }
+
+  &__item {
+    margin-top: 26px;
+  }
+
+  &__name {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__value {
+    @include fs-24;
+    @include upper;
+    @include t-center;
+    width: 124px;
+    height: 56px;
+    line-height: 51px;
+    vertical-align: middle;
+    border-radius: 3px;
+    border: solid 1px $border-d;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  &__item-description {
+    @include centering;
+    width: 243px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__value-description {
+    @include grey-back;
+    @include t-center;
+    @include Arial;
+    font-size: 12px;
+    line-height: 1;
+    width: 57px;
+    padding: 0 15px;
+    display: inline-block;
+    margin-top: -10px;
+  }
+
+  &__expenses {
+    @include upper;
+    @include fs-14;
+    @include t-center;
+    @include fw-n;
+    margin-top: 21px;
+  }
+}

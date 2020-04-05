@@ -1,10 +1,6 @@
 .working-principles {
   @include zero;
-
-  &__wrapper {
-    @include w-280;
-    margin: 0 auto;
-  }
+  margin-bottom: 46px;
 
   &__header {
     @include fs-36;
