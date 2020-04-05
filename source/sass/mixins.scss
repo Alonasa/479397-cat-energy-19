@@ -7,6 +7,18 @@
   margin: 0 auto;
 }
 
+@mixin indents {
+  padding: 0 20px;
+}
+
+@mixin phone-width {
+  min-width: $phone-width;
+}
+
+@mixin w-280 {
+  width: $w-280;
+}
+
 @mixin black-three {
   color: $black-three;
 }
@@ -15,13 +27,29 @@
   color: $white;
 }
 
+@mixin grey-back {
+  background-color: $grey-back;
+}
+
+@mixin green-leaf {
+  background-color: $green-leaf;
+}
+
 @mixin fs-14 {
   font-size: 14px;
+}
+
+@mixin fs-16 {
+  font-size: 16px;
 }
 
 @mixin fs-20 {
   font-size: 20px;
   line-height: 1;
+}
+
+@mixin fs-24 {
+  font-size: 24px;
 }
 
 @mixin fs-36 {
@@ -31,6 +59,10 @@
 
 @mixin fw-n {
   font-weight: normal;
+}
+
+@mixin Arial {
+  font-family: "Arial", sans-serif;
 }
 
 @mixin none {
@@ -45,11 +77,15 @@
   text-align: center;
 }
 
+@mixin upper {
+  text-transform: uppercase;
+}
+
 @mixin block {
   display: block;
   box-sizing: border-box;
 }
 
-@mixin upper {
-  text-transform: uppercase;
+@mixin border-box {
+  box-sizing: border-box;
 }

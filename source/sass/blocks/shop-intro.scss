@@ -1,9 +1,10 @@
 .shop-intro {
   @include white;
   @include centering;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat #68b738;
+  @include block;
+  @include phone-width;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
   min-height: 305px;
-  display: block;
   position: relative;
   margin-bottom: 135px;
 
@@ -25,11 +26,12 @@
   }
 
   &__images {
-    @include centering;
+    margin: auto;
     position: absolute;
     width: 280px;
     height: 270px;
-    left: 20px;
     top: 166px;
+    left: 0;
+    right: 0;
   }
 }
