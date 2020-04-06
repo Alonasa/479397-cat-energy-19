@@ -3,26 +3,44 @@
   min-height: 476px;
 }
 
-.contacts__wrapper {
-  @include indents;
-  width: 100%;
+.contacts__header {
   background-color: $white;
+}
+
+.contacts__wrapper {
+  @include w-280;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info {
+  @include zero;
+  padding: 28px 0 25px;
 }
 
 .contacts__offer {
   @include fs-16;
   @include fw-n;
   @include upper;
-  width: 123px;
+  width: 125px;
 }
 
 .contacts__address {
-  padding-bottom: 50px;
+  @include Arial;
+  width: 135px;
+  line-height: 1.43;
+  padding-right: 5px;
 }
 
 .contacts__map {
+  @include t-center;
   position: absolute;
-  top: 59px;
+  width: 100%;
+  top: 76px;
   z-index: -2;
+}
+
+.contacts__map img {
+  background-color: #eeedeb;
 }
