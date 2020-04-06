@@ -1,23 +1,23 @@
 .working-principles {
   @include zero;
   margin-bottom: 46px;
+}
 
-  &__header {
-    @include fs-36;
-    @include black-three;
-    @include fw-n;
-  }
+.working-principles__header {
+  @include fs-36;
+  @include black-three;
+  @include fw-n;
+}
 
-  &__list {
-    @include zero;
-    @include none;
-    @include Arial;
-    @include fs-14;
-    margin-top: 42px;
-  }
+.working-principles__list {
+  @include zero;
+  @include none;
+  @include Arial;
+  @include fs-14;
+  margin-top: 42px;
+}
 
-  &__item {
-    padding-left: 80px;
-    margin-bottom: 26px;
-  }
+.working-principles__item {
+  padding-left: 80px;
+  margin-bottom: 26px;
 }

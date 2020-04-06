@@ -15,7 +15,7 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Интернет-магазин Cat energy"/>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a href="#" class="main-nav__link">Главная</a>
@@ -31,10 +31,12 @@
     </header>
     <main class="main-content">
       <section class="shop-intro">
-        <h2 class="shop-intro__header">Функциональное питание для котов</h2>
-        <p class="shop-intro__description">
-          Занялся собой? Займись котом!
-        </p>
+        <div class="shop-intro__wrapper wrapper">
+          <h2 class="shop-intro__header">Функциональное питание для котов</h2>
+          <p class="shop-intro__description">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
         <picture class="shop-intro__images">
           <img class="shop-intro__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Подобрать програму Cat Energy"/>
         </picture>
@@ -139,7 +141,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper wrapper">
-          <h3 class="contacts__offer">приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="contacts__offer">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8
             Санкт-Петербург

@@ -2,9 +2,9 @@
   @include zero;
   @include black-three;
   @include upper;
+}
 
-  &__logo {
-    @include block;
-    padding: 11px 20px 15px;
-  }
+.page-header__logo {
+  @include block;
+  padding: 11px 20px 15px;
 }

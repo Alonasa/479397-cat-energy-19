@@ -1,0 +1,28 @@
+.contacts {
+  position: relative;
+  min-height: 476px;
+}
+
+.contacts__wrapper {
+  @include indents;
+  width: 100%;
+  background-color: $white;
+  box-sizing: border-box;
+}
+
+.contacts__offer {
+  @include fs-16;
+  @include fw-n;
+  @include upper;
+  width: 123px;
+}
+
+.contacts__address {
+  padding-bottom: 50px;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 59px;
+  z-index: -2;
+}

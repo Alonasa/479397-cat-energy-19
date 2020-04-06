@@ -1,50 +1,50 @@
 .shop-programs {
   @include zero;
   @include border-box;
+}
 
-  &__selection {
-    @include block;
-    @include no-decoration;
-    @include upper;
-    @include white;
-    @include green-leaf;
-    @include t-center;
-    @include w-280;
-    padding: 11px;
-    margin-bottom: 23px;
-  }
+.shop-programs__selection {
+  @include block;
+  @include no-decoration;
+  @include upper;
+  @include white;
+  @include green-leaf;
+  @include t-center;
+  @include w-280;
+  padding: 11px;
+  margin-bottom: 23px;
+}
 
-  &__item {
-    @include grey-back;
-    @include indents;
-    margin-bottom: 20px;
-    padding-bottom: 21px;
-  }
+.shop-programs__item {
+  @include grey-back;
+  @include indents;
+  margin-bottom: 20px;
+  padding-bottom: 21px;
+}
 
-  &__name {
-    @include zero;
-    @include t-center;
-    @include upper;
-    @include fw-n;
-    @include fs-24;
-    padding-top: 33px;
-    padding-left: 10px;
-  }
+.shop-programs__name {
+  @include zero;
+  @include t-center;
+  @include upper;
+  @include fw-n;
+  @include fs-24;
+  padding-top: 33px;
+  padding-left: 10px;
+}
 
-  &__description {
-    @include Arial;
-    padding: 18px 0 23px;
-    border-bottom: 1px solid $border-d;
-  }
+.shop-programs__description {
+  @include Arial;
+  padding: 18px 0 23px;
+  border-bottom: 1px solid $border-d;
+}
 
-  &__catalog {
-    @include no-decoration;
-    @include fs-16;
-    @include black-three;
-    @include upper;
-  }
+.shop-programs__catalog {
+  @include no-decoration;
+  @include fs-16;
+  @include black-three;
+  @include upper;
+}
 
-  &__name-mass {
-    padding-left: 39px;
-  }
+.shop-programs__name-mass {
+  padding-left: 39px;
 }
