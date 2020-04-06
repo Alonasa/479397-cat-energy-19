@@ -1,0 +1,26 @@
+.example-slider {
+  @include grey-back;
+  margin-top: 35px;
+
+  &__list {
+    @include none;
+    @include zero;
+  }
+
+  &__item {
+    width: 320px;
+    height: 240px;
+    margin-left: -20px;
+  }
+
+  &__coontrollers {
+    @include centering;
+  }
+
+  &__controller {
+    @include fs-16;
+    @include upper;
+    @include grey-back;
+    border: none;
+  }
+}

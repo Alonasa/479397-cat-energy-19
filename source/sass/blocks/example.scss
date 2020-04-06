@@ -24,7 +24,7 @@
   }
 
   &__name {
-    width: 280px;
+    @include w-280;
     display: flex;
     justify-content: space-between;
   }

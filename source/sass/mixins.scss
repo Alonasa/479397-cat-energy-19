@@ -19,6 +19,10 @@
   width: $w-280;
 }
 
+@mixin w-320 {
+  width: $w-320;
+}
+
 @mixin black-three {
   color: $black-three;
 }

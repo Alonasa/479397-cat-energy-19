@@ -116,30 +116,38 @@
         </div>
       </section>
       <section class="example-slider">
-        <h2 class="visually-hidden">Ваши результаты</h2>
-        <ul class="example-slider__list">
-          <li class="example-slider__item">
-            <img src="https://via.placeholder.com/311x232" alt="До Cat Energy" width="311" height="232">
-          </li>
-          <li class="example-slider__item">
-            <img src="https://via.placeholder.com/311x232" alt="После Cat Energy" width="311" height="232">
-          </li>
-        </ul>
-        <div class="example-slider__controllers">
-          <button class="example-slider__controller example-slider--checked" type="button" aria-label="Выбрать Слайд 1"></button>
-          <button class="example-slider__controller" type="button" aria-label="Выбрать сайд 2"></button>
+        <div class="example-slider__wrapper wrapper">
+          <h2 class="visually-hidden">Ваши результаты</h2>
+          <ul class="example-slider__list">
+            <li class="example-slider__item">
+              <picture class="example-slider__picture">
+                <img src="/img/before-mobile@1x.png" alt="До Cat Energy" width="320" height="240">
+              </picture>
+            </li>
+            <li class="example-slider__item">
+              <picture class="example-slider__picture">
+                <img src="/img/after-mobile@1x.png" alt="После Cat Energy" width="320" height="240">
+              </picture>
+            </li>
+          </ul>
+          <div class="example-slider__controllers">
+            <button class="example-slider__controller example-slider--checked" type="button" aria-label="Выбрать Слайд 1">Было</button>
+            <button class="example-slider__controller" type="button" aria-label="Выбрать сайд 2">Стало</button>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper wrapper">
           <h3 class="contacts__offer">приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8
             Санкт-Петербург
           </p>
         </div>
-        <img src="https://via.placeholder.com/320x400" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="320" height="400">
+        <picture class="contacts__map">
+          <img src="img/bg-map-mobile@1x.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="320" height="400">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
