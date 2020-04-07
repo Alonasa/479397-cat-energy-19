@@ -1,0 +1,20 @@
+.page-footer__logo {
+  @include centering;
+  display: block;
+  margin-bottom: 29px;
+}
+
+.page-footer__social {
+  border-top: 1px solid $border-d;
+  border-bottom: 1px solid $border-d;
+}
+
+.page-footer__social-list {
+  @include zero;
+  @include none;
+  @include centering;
+  padding: 22px 0;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
