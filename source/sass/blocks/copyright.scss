@@ -1,0 +1,15 @@
+.copyright {
+  @include w-280;
+  @include fs-16;
+  @include Arial;
+  min-height: 78px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  @include no-decoration;
+  color: inherit;
+}
