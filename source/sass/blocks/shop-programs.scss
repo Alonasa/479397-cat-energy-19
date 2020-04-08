@@ -6,12 +6,6 @@
 .shop-programs__selection {
   @include block;
   @include no-decoration;
-  @include upper;
-  @include white;
-  @include green-leaf;
-  @include t-center;
-  @include w-280;
-  padding: 11px;
   margin-bottom: 23px;
 }
 

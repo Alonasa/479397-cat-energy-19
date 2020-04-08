@@ -1,0 +1,21 @@
+.button {
+  @include upper;
+  @include white;
+  @include t-center;
+  @include w-280;
+  padding: 11px;
+}
+
+.button--green {
+  @include green-leaf;
+}
+
+.button__grey-background {
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.button--buy {
+  @include fs-16;
+  padding: 8px;
+}

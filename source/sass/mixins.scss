@@ -23,6 +23,14 @@
   width: $w-320;
 }
 
+@mixin tablet-width {
+  width: 768px;
+}
+
+@mixin desktop-width {
+  width: 1300px;
+}
+
 @mixin black-three {
   color: $black-three;
 }
@@ -37,6 +45,10 @@
 
 @mixin green-leaf {
   background-color: $green-leaf;
+}
+
+@mixin fs-12 {
+  font-size: 12px;
 }
 
 @mixin fs-14 {
