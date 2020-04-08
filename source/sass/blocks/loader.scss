@@ -1,0 +1,29 @@
+.loader {
+  text-align: center;
+  border-bottom: 1px solid $border-c;
+}
+
+.loader__header {
+  @include fs-16;
+  @include upper;
+  @include fw-n;
+  @include zero;
+  padding-top: 60px;
+}
+
+.loader__description {
+  @include Arial;
+  @include fs-12;
+  @include zero;
+  padding-top: 8px;
+  margin-bottom: 21px;
+}
+
+.loader__load-more {
+  @include fs-16;
+  @include brown;
+  background-color: $grey-back;
+  line-height: 1.25;
+  margin-bottom: 24px;
+  padding: 10px;
+}

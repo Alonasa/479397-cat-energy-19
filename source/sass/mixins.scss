@@ -39,6 +39,10 @@
   color: $white;
 }
 
+@mixin brown {
+  color: $greyish-brown;
+}
+
 @mixin grey-back {
   background-color: $grey-back;
 }
