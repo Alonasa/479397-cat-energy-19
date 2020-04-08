@@ -1,0 +1,68 @@
+.form__description {
+  @include margin-0;
+  @include upper;
+  width: 230px;
+  padding: 38px 0;
+}
+
+.form__pet-data {
+  @include zero;
+  border: none;
+}
+
+.form__block-wrapper {
+  min-height: 177px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.form__pet-wrapper {
+  height: 45px;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__input {
+  height: 45px;
+  box-sizing: border-box;
+  border: solid 1px $border-d;
+}
+
+.form__input-1 {
+  width: 229px;
+}
+
+.form__input-2 {
+  width: 204px;
+}
+
+.form__input-3 {
+  width: 172px;
+}
+
+.form__label {
+  @include fs-16;
+  @include upper;
+}
+
+input[placeholder] {
+  @include fs-16;
+  @include upper;
+  padding: 15px;
+  font-family: inherit;
+}
+
+.form__pet-problem {
+  @include zero;
+  border: none;
+}
+
+.form__radio-border {
+  box-sizing: border-box;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
