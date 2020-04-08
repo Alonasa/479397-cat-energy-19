@@ -1,3 +1,7 @@
+.additional-products {
+  margin-bottom: 33px;
+}
+
 .additional-products__header {
   @include margin-0;
   @include fs-24;
@@ -10,6 +14,7 @@
 .additional-products__list {
   @include zero;
   @include none;
+  margin-bottom: 39px;
 }
 
 .additional-products__item {
