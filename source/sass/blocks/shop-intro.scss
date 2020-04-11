@@ -1,7 +1,6 @@
 .shop-intro {
   margin: 0 auto;
   margin-bottom: 135px;
-  position: relative;
   color: $white;
   box-sizing: border-box;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
@@ -27,11 +26,16 @@
 }
 
 .shop-intro__images {
+  position: relative;
+  display: block;
+}
+
+.shop-intro__image {
   width: 280px;
   height: 270px;
   margin: auto;
   position: absolute;
-  top: 166px;
+  top: -139px;
   left: 0;
   right: 0;
 }
