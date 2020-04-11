@@ -1,0 +1,20 @@
+.special-offer {
+  background-color: $green-leaf;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.special-offer__header {
+  width: 165px;
+  margin: 0;
+  padding-top: 186px;
+  position: absolute;
+  z-index: 2;
+  font-size: $font-16;
+  font-weight: normal;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: $white;
+}

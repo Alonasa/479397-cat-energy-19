@@ -1,0 +1,23 @@
+.button {
+  width: 280px;
+  padding: 10px;
+  display: inline-block;
+  font-size: $font-16;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color: $white;
+}
+
+.button--green {
+  background-color: $green-leaf;
+}
+
+.button__grey-background {
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $grey-back;
+  border: none;
+  color: $greyish-brown;
+}

@@ -1,0 +1,36 @@
+.additional-products {
+  margin-bottom: 33px;
+}
+
+.additional-products__header {
+  margin: 0;
+  padding: 8px 0 35px;
+  line-height: 1;
+  font-size: $font-24;
+  font-weight: normal;
+  border-bottom: 1px solid #cccccc;
+}
+
+.additional-products__list {
+  @include list-reset;
+  margin-bottom: 39px;
+}
+
+.additional-products__item {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.additional-products__item-header {
+  margin: 9px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.additional-products__options {
+  margin: 5px 0 14px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

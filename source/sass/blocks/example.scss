@@ -1,0 +1,76 @@
+.example {
+  background-color: $grey-back;
+}
+
+.example__header {
+  @include indents-reset;
+  padding: 29px 0 20px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: $black-three;
+}
+
+.example__description {
+  width: 266px;
+  font-family: "Arial", sans-serif;
+}
+
+.example__results {
+  @include list-reset;
+}
+
+.example__item {
+  margin-top: 26px;
+}
+
+.example__name {
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__value {
+  width: 124px;
+  height: 56px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: $font-24;
+  line-height: 51px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-radius: 3px;
+  border: solid 1px $border-d;
+}
+
+.example__item-description {
+  width: 243px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__value-description {
+  width: 57px;
+  padding: 0 15px;
+  margin-top: -10px;
+  display: inline-block;
+  font-size: $font-12;
+  line-height: 1;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: $grey-back;
+}
+
+.example__expenses {
+  @include indents-reset;
+  margin-top: 21px;
+  padding-bottom: 20px;
+  font-size: $font-14;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}

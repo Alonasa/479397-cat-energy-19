@@ -1,0 +1,24 @@
+.loader {
+  text-align: center;
+  border-bottom: 1px solid $border-c;
+}
+
+.loader__header {
+  @include indents-reset;
+  padding-top: 60px;
+  font-size: $font-16;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.loader__description {
+  @include indents-reset;
+  padding-top: 8px;
+  margin-bottom: 21px;
+  font-size: $font-12;
+  font-family: "Arial", sans-serif;
+}
+
+.loader__load-more {
+  margin-bottom: 24px;
+}

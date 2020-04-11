@@ -1,0 +1,41 @@
+.shop-intro {
+  margin: 0 auto;
+  margin-bottom: 135px;
+  color: $white;
+  box-sizing: border-box;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
+  background-size: cover;
+}
+
+.shop-intro__header {
+  @include indents-reset;
+  margin: 0 auto;
+  padding-top: 27px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+.shop-intro__description {
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 166px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shop-intro__images {
+  position: relative;
+  display: block;
+}
+
+.shop-intro__image {
+  width: 280px;
+  height: 270px;
+  margin: auto;
+  position: absolute;
+  top: -139px;
+  left: 0;
+  right: 0;
+}

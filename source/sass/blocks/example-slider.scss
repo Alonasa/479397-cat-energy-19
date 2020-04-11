@@ -1,0 +1,29 @@
+.example-slider {
+  padding-top: 15px;
+  background-color: $grey-back;
+}
+
+.example-slider__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.example-slider__list {
+  @include list-reset;
+}
+
+.example-slider__item {
+  width: 320px;
+  height: 240px;
+}
+
+.example-slider__coontrollers {
+  margin: 0 auto;
+}
+
+.example-slider__controller {
+  border: none;
+  font-size: $font-16;
+  text-transform: uppercase;
+  background-color: $grey-back;
+}

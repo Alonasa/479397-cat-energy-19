@@ -1,0 +1,25 @@
+.page-header {
+  @include indents-reset;
+  color: $black-three;
+  text-transform: uppercase;
+}
+
+.page-header__logo-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  width: 191px;
+  height: 39px;
+  padding: 11px 0 15px;
+  display: block;
+}
+
+.page-header__toggle {
+  width: 35px;
+  height: 29px;
+  margin-top: 18px;
+}

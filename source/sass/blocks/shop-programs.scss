@@ -1,0 +1,44 @@
+.shop-programs {
+  @include indents-reset;
+  box-sizing: border-box;
+}
+
+.shop-programs__selection {
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.shop-programs__item {
+  padding: 0 20px;
+  padding-bottom: 21px;
+  margin-bottom: 20px;
+  background-color: $grey-back;
+}
+
+.shop-programs__name {
+  @include indents-reset;
+  padding-top: 33px;
+  padding-left: 10px;
+  font-weight: normal;
+  font-size: $font-24;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.shop-programs__description {
+  padding: 18px 0 23px;
+  font-family: "Arial", sans-serif;
+  border-bottom: 1px solid $border-d;
+}
+
+.shop-programs__catalog {
+  font-size: $font-16;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-three;
+}
+
+.shop-programs__name-mass {
+  padding-left: 39px;
+}
