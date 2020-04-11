@@ -30,6 +30,7 @@
 
 .catalog__item-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog__item-header {
@@ -53,9 +54,9 @@
 }
 
 .catalog__item-description {
-  border-spacing: 0;
   width: 140px;
   margin-top: 20px;
+  border-spacing: 0;
 }
 
 .catalog__item-right {

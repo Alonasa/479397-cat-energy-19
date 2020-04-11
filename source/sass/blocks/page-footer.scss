@@ -11,9 +11,9 @@
 
 .page-footer__social-list {
   @include list-reset;
+  width: 130px;
   margin: 0 auto;
   padding: 22px 0;
-  width: 130px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
