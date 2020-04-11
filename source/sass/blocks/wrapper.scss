@@ -1,4 +1,4 @@
 .wrapper {
-  @include w-280;
-  @include centering;
+  width: 280px;
+  margin: 0 auto;
 }

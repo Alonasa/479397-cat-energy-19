@@ -1,5 +1,6 @@
 .header {
-  @include margin-0;
-  @include fs-36;
-  @include fw-n;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: normal;
 }

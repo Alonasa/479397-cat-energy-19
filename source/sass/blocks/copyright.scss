@@ -1,8 +1,8 @@
 .copyright {
-  @include w-280;
-  @include fs-16;
-  @include Arial;
+  width: 280px;
   min-height: 78px;
+  font-size: $font-16;
+  font-family: "Arial", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -10,6 +10,6 @@
 }
 
 .copyright__link {
-  @include no-decoration;
   color: inherit;
+  text-decoration: none;
 }

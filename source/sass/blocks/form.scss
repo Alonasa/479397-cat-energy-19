@@ -1,12 +1,12 @@
 .form__description {
-  @include margin-0;
-  @include upper;
   width: 230px;
+  margin: 0;
   padding: 38px 0;
+  text-transform: uppercase;
 }
 
 .form__pet-data {
-  @include zero;
+  @include indents-reset;
   border: none;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .form__pet-wrapper {
-  height: 45px;
   width: 280px;
+  height: 45px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -45,19 +45,19 @@
 }
 
 .form__label {
-  @include fs-16;
-  @include upper;
+  font-size: $font-16;
+  text-transform: uppercase;
 }
 
 input[placeholder] {
-  @include fs-16;
-  @include upper;
   padding: 15px;
+  font-size: $font-16;
   font-family: inherit;
+  text-transform: uppercase;
 }
 
 .form__pet-problem {
-  @include zero;
+  @include indents-reset;
   border: none;
 }
 

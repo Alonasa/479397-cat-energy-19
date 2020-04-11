@@ -1,20 +1,20 @@
 .working-principles {
-  @include zero;
+  @include indents-reset;
   margin-bottom: 46px;
 }
 
 .working-principles__header {
-  @include fs-36;
-  @include black-three;
-  @include fw-n;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: $black-three;
 }
 
 .working-principles__list {
-  @include zero;
-  @include none;
-  @include Arial;
-  @include fs-14;
+  @include list-reset;
   margin-top: 42px;
+  font-size: $font-14;
+  font-family: "Arial", sans-serif;
 }
 
 .working-principles__item {

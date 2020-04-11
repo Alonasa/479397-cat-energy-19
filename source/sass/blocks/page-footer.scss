@@ -1,7 +1,7 @@
 .page-footer__logo {
-  @include t-center;
-  display: block;
   margin-bottom: 29px;
+  display: block;
+  text-align: center;
 }
 
 .page-footer__social {
@@ -10,11 +10,11 @@
 }
 
 .page-footer__social-list {
-  @include zero;
-  @include none;
-  @include centering;
+  @include list-reset;
+  margin: 0 auto;
   padding: 22px 0;
   width: 130px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }

@@ -1,21 +1,23 @@
 .button {
-  @include upper;
-  @include white;
-  @include t-center;
-  @include w-280;
-  padding: 11px;
+  width: 280px;
+  padding: 10px;
+  display: inline-block;
+  font-size: $font-16;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color: $white;
 }
 
 .button--green {
-  @include green-leaf;
+  background-color: $green-leaf;
 }
 
 .button__grey-background {
-  border: none;
   font-family: "Oswald", "Arial", sans-serif;
-}
-
-.button--buy {
-  @include fs-16;
-  padding: 8px;
+  background-color: $grey-back;
+  border: none;
+  color: $greyish-brown;
 }

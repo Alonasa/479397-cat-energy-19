@@ -1,42 +1,42 @@
 .shop-programs {
-  @include zero;
-  @include border-box;
+  @include indents-reset;
+  box-sizing: border-box;
 }
 
 .shop-programs__selection {
-  @include block;
-  @include no-decoration;
   margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .shop-programs__item {
-  @include grey-back;
-  @include indents;
-  margin-bottom: 20px;
+  padding: 0 20px;
   padding-bottom: 21px;
+  margin-bottom: 20px;
+  background-color: $grey-back;
 }
 
 .shop-programs__name {
-  @include zero;
-  @include t-center;
-  @include upper;
-  @include fw-n;
-  @include fs-24;
+  @include indents-reset;
   padding-top: 33px;
   padding-left: 10px;
+  font-weight: normal;
+  font-size: $font-24;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .shop-programs__description {
-  @include Arial;
   padding: 18px 0 23px;
+  font-family: "Arial", sans-serif;
   border-bottom: 1px solid $border-d;
 }
 
 .shop-programs__catalog {
-  @include no-decoration;
-  @include fs-16;
-  @include black-three;
-  @include upper;
+  font-size: $font-16;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-three;
 }
 
 .shop-programs__name-mass {

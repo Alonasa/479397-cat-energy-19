@@ -1,23 +1,23 @@
 .example {
-  @include grey-back;
+  background-color: $grey-back;
 }
 
 .example__header {
-  @include zero;
-  @include fs-36;
-  @include black-three;
-  @include fw-n;
+  @include indents-reset;
   padding: 29px 0 20px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: $black-three;
 }
 
 .example__description {
-  @include Arial;
   width: 266px;
+  font-family: "Arial", sans-serif;
 }
 
 .example__results {
-  @include none;
-  @include zero;
+  @include list-reset;
 }
 
 .example__item {
@@ -25,50 +25,52 @@
 }
 
 .example__name {
-  @include w-280;
+  width: 280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .example__value {
-  @include fs-24;
-  @include upper;
-  @include t-center;
   width: 124px;
   height: 56px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: $font-24;
   line-height: 51px;
+  text-transform: uppercase;
   vertical-align: middle;
   border-radius: 3px;
   border: solid 1px $border-d;
-  display: inline-block;
-  box-sizing: border-box;
 }
 
 .example__item-description {
-  @include centering;
   width: 243px;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .example__value-description {
-  @include grey-back;
-  @include t-center;
-  @include Arial;
-  font-size: 12px;
-  line-height: 1;
   width: 57px;
   padding: 0 15px;
-  display: inline-block;
   margin-top: -10px;
+  display: inline-block;
+  font-size: $font-12;
+  line-height: 1;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: $grey-back;
 }
 
 .example__expenses {
-  @include zero;
-  @include upper;
-  @include fs-14;
-  @include t-center;
-  @include fw-n;
+  @include indents-reset;
   margin-top: 21px;
   padding-bottom: 20px;
+  font-size: $font-14;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
 }

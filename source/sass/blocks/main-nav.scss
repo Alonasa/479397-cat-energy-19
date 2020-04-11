@@ -1,30 +1,18 @@
-.main-nav {
-  @include none;
-  position: relative;
+.main-nav__list {
+  @include list-reset;
+}
 
-  &__toggle {
-    position: absolute;
-    width: 35px;
-    height: 29px;
-    top: -44px;
-    left: 280px;
-  }
+.main-nav__item {
+  text-align: center;
+}
 
-  &__list {
-    @include none;
-    @include zero;
-  }
-
-  &__item {
-    @include t-center;
-  }
-
-  &__link {
-    @include black-three;
-    @include no-decoration;
-    @include block;
-    @include fs-20;
-    border-top: 1px solid $border-c;
-    padding: 22px;
-  }
+.main-nav__link {
+  padding: 22px;
+  display: block;
+  box-sizing: border-box;
+  font-size: $font-20;
+  line-height: 1;
+  text-decoration: none;
+  color: $black-three;
+  border-top: 1px solid $border-c;
 }

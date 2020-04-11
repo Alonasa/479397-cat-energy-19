@@ -4,26 +4,21 @@
 }
 
 .loader__header {
-  @include fs-16;
-  @include upper;
-  @include fw-n;
-  @include zero;
+  @include indents-reset;
   padding-top: 60px;
+  font-size: $font-16;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .loader__description {
-  @include Arial;
-  @include fs-12;
-  @include zero;
+  @include indents-reset;
   padding-top: 8px;
   margin-bottom: 21px;
+  font-size: $font-12;
+  font-family: "Arial", sans-serif;
 }
 
 .loader__load-more {
-  @include fs-16;
-  @include brown;
-  background-color: $grey-back;
-  line-height: 1.25;
   margin-bottom: 24px;
-  padding: 10px;
 }

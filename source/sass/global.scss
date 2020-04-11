@@ -1,6 +1,6 @@
 body {
-  @include zero;
-  min-width: 320px;
+  @include indents-reset;
+  min-width: $mobile-width;
   font-family: "Oswald", "Arial", sans-serif;
   color: $greyish-brown;
   font-size: 14px;
