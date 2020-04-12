@@ -1,8 +1,18 @@
+.form__header {
+  padding: 27px 0;
+}
+
 .form__description {
   width: 230px;
   margin: 0;
-  padding: 38px 0;
+  padding: 10px 0 39px;
   text-transform: uppercase;
+}
+
+.form__request {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form__pet-data {
@@ -10,16 +20,16 @@
   border: none;
 }
 
-.form__block-wrapper {
-  min-height: 177px;
+.form__personal-data {
+  padding-bottom: 9px;
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
 }
 
-.form__pet-wrapper {
+.form__pet-info {
   width: 280px;
   height: 45px;
+  padding-bottom: 14px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -27,7 +37,6 @@
 }
 
 .form__input {
-  height: 45px;
   box-sizing: border-box;
   border: solid 1px $border-d;
 }
@@ -50,8 +59,9 @@
 }
 
 input[placeholder] {
-  padding: 15px;
-  font-size: $font-16;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.49;
   font-family: inherit;
   text-transform: uppercase;
 }
@@ -65,4 +75,16 @@ input[placeholder] {
   box-sizing: border-box;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+}
+
+.form__personal-program {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form__problem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }

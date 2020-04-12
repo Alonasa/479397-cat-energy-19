@@ -51,16 +51,16 @@
           <div class="form__request">
             <fieldset class="form__pet-data">
               <div class="form_wrapper wrapper">
-                <div class="form__block-wrapper">
-                  <div class="form__pet-wrapper">
+                <div class="form__personal-data">
+                  <div class="form__pet-info">
                     <label class="form__label" for="pet-name">Имя:*</label>
                     <input class="form__input form__input-1" type="text" name="pet-name" id="pet-name" placeholder="Барсик" autofocus/>
                   </div>
-                  <div class="form__pet-wrapper">
+                  <div class="form__pet-info">
                     <label class="form__label" for="weight">Вес (кг):*</label>
                     <input class="form__input form__input-2" type="text" name="weight" id="weight" placeholder="7"/>
                   </div>
-                  <div class="form__pet-wrapper">
+                  <div class="form__pet-info">
                     <label class="form__label" for="age">Возраст (лет):</label>
                     <input class="form__input form__input-3" type="text" name="age" id="age" placeholder="7"/>
                   </div>
@@ -70,12 +70,20 @@
             <fieldset class="form__pet-problem">
               <div class="form__radio-border">
                 <div class="form__wrapper wrapper">
-                  <label class="form__label" for="slimming">Похудение</label>
-                  <input class="form__input" type="radio" name="product-type" value="slim" id="slimming" checked>
-                  <label class="form__label" for="mass">Набор массы</label>
-                  <input class="form__input" type="radio" name="product-type" value="mass_gain" id="mass">
-                  <input class="form__input" type="radio" name="product-type" value="need_advice" id="advice">
-                  <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                  <div class="form__personal-program">
+                    <div class="form__problem">
+                      <input class="form__input" type="radio" name="product-type" value="slim" id="slimming" checked>
+                      <label class="form__label form__program" for="slimming">Похудение</label>
+                    </div>
+                    <div class="form__problem">
+                      <input class="form__input" type="radio" name="product-type" value="mass_gain" id="mass">
+                      <label class="form__label form__program" for="mass">Набор массы</label>
+                    </div>
+                    <div class="form__problem">
+                      <input class="form__input" type="radio" name="product-type" value="need_advice" id="advice">
+                      <label class="form__label form__program" for="advice">Не знаю (Нужен ваш совет)</label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>
