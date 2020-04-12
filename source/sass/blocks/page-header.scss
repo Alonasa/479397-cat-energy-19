@@ -14,12 +14,44 @@
 .page-header__logo {
   width: 191px;
   height: 39px;
-  padding: 11px 0 15px;
+  padding: 11px 0 16px;
   display: block;
 }
 
+.page-header__icon {
+  margin-left: auto;
+}
+
 .page-header__toggle {
-  width: 35px;
+  width: 40px;
   height: 29px;
-  margin-top: 18px;
+  padding: 0;
+  margin-top: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header--opened .page-header__toggle-menu {
+  display: none;
+}
+
+.page-header--closed .page-header__toggle-menu {
+  display: block;
+}
+
+.page-header--opened .page-header__toggle--open {
+  display: block;
+}
+
+.page-header--closed .page-header__toggle--open {
+  display: none;
+}
+
+.page-header--closed .main-nav {
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
