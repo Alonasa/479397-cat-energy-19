@@ -3,12 +3,14 @@
 }
 
 .catalog__wrapper {
-  width: 320px;
+  width: $mobile-width;
+  margin: auto;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .catalog__header {
-  padding: 29px 20px;
+  padding: 28px 20px;
 }
 
 .catalog__list {
@@ -18,7 +20,6 @@
 
 .catalog__item {
   @include list-reset;
-  padding: 0 20px;
   padding-bottom: 24px;
   margin: -1px 0;
   box-sizing: border-box;

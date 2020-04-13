@@ -10,12 +10,21 @@
   </head>
   <body>
     <h1 class="visually-hidden">Интернет магазин питания для котов</h1>
-    <header class="page-header">
+    <header class="page-header page-header__list page-header--nojs page-header--closed">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Интернет-магазин Cat energy"/>
         </a>
-        <button class="page-header__toggle button__toggler button__grey-background button__action" type="button" aria-label="Открыть меню"></button>
+        <button class="page-header__toggle button__toggler" type="button" aria-label="Открыть меню">
+          <svg class="page-header__toggle-menu page-header__toggle--open page-header__icon" width="19" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "/>
+          </svg>
+          <svg class="page-header__toggle-menu page-header__icon" width="25" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+            <rect y="16" width="24" height="2"/>
+            <rect y="8" width="24" height="2"/>
+            <rect width="24" height="2"/>
+          </svg>
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -33,11 +42,11 @@
     </header>
     <main>
       <section class="catalog">
-        <div class="catalog__wrapper wrapper">
+        <div class="catalog__wrapper">
           <h2 class="catalog__header header">Каталог продукции</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
@@ -58,11 +67,11 @@
                     <td class="catalog__item-data catalog__item-right">700 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
@@ -83,11 +92,11 @@
                     <td class="catalog__item-data catalog__item-right">1000 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
@@ -108,11 +117,11 @@
                     <td class="catalog__item-data catalog__item-right">700 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
@@ -133,11 +142,11 @@
                     <td class="catalog__item-data catalog__item-right">1000 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
@@ -158,11 +167,11 @@
                     <td class="catalog__item-data catalog__item-right">400 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
@@ -183,11 +192,11 @@
                     <td class="catalog__item-data catalog__item-right">700 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__item-wrapper">
+              <div class="catalog__item-wrapper wrapper">
                 <picture class="catalog__picture">
                   <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
@@ -208,8 +217,8 @@
                     <td class="catalog__item-data catalog__item-right">500 Р.</td>
                   </tr>
                 </table>
+                <a class="button button--buy button--green" href="#">Заказать</a>
               </div>
-              <a class="button button--buy button--green" href="#">Заказать</a>
             </li>
           </ul>
         </div>
@@ -342,5 +351,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
