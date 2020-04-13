@@ -1,7 +1,11 @@
 .shop-intro {
-  margin: 0 auto;
   margin-bottom: 135px;
   color: $white;
+}
+
+.shop-intro__container {
+  width: $mobile-width;
+  margin: 0 auto;
   box-sizing: border-box;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
   background-size: cover;

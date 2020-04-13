@@ -18,11 +18,7 @@
   display: block;
 }
 
-@media (max-width: $mobile-width-only) {
-  .page-header__icon {
-    margin-left: auto;
-  }
-
+@media (max-width: $tablet-width - 1) {
   .page-header__toggle {
     display: block;
     width: 40px;
@@ -32,6 +28,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  .page-header__icon {
+    margin-left: auto;
   }
 
   .page-header--opened .page-header__toggle-menu {
@@ -56,6 +56,14 @@
     &--active {
       display: block;
     }
+  }
+
+  .page-header--nojs .page-header__toggle {
+    display: none;
+  }
+
+  .page-header--nojs .main-nav {
+    display: block;
   }
 }
 
