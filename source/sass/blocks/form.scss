@@ -55,6 +55,7 @@
 
 .form__label {
   font-size: $font-16;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -78,13 +79,24 @@ input[placeholder] {
 }
 
 .form__personal-program {
+  min-height: 112px;
+  padding: 22px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__option {
+  padding-left: 46px;
 }
 
 .form__problem {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.form__problem label {
+  position: relative;
 }

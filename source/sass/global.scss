@@ -12,7 +12,7 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
