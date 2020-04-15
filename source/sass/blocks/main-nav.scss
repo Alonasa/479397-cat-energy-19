@@ -38,3 +38,15 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    min-width: 478px;
+    min-height: 60px;
+  }
+
+  .main-nav__link {
+    font-size: $font-20;
+    line-height: 1.25;
+  }
+}
