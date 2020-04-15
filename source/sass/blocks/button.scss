@@ -15,9 +15,26 @@
   background-color: $green-leaf;
 }
 
+.button__grey {
+  border: none;
+}
+
 .button__grey-background {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: $grey-back;
   border: none;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 16px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: $font-20;
+    line-height: 1;
+  }
+
+  .button--send {
+    width: 283px;
+  }
 }

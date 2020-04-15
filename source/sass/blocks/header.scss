@@ -4,3 +4,9 @@
   line-height: 1;
   font-weight: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    font-size: 60px;
+  }
+}

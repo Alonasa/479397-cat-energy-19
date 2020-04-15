@@ -44,9 +44,58 @@
   top: 76px;
   z-index: -2;
   text-align: center;
+  background-color: #eeedeb;
+  line-height: 0;
 }
 
 .contacts__map img {
   height: 400px;
-  background-color: #eeedeb;
+  line-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-height: 597px;
+  }
+
+  .contacts__wrapper {
+    width: 630px;
+    min-height: 201px;
+  }
+
+  .contacts__info {
+    padding: 62px 0 58px;
+  }
+
+  .contacts__offer,
+  .contacts__address {
+    width: 155px;
+    line-height: 1.25;
+  }
+
+  .contacts__offer {
+    font-size: $font-20;
+  }
+
+  .contacts__address {
+    font-size: $font-16;
+    align-content: flex-end;
+    text-align: right;
+    padding-right: 3px;
+  }
+
+  .contacts__row-2 {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .contacts__map {
+    top: 197px;
+    line-height: 0;
+  }
+
+  .contacts__map img {
+    height: 400px;
+    line-height: 0;
+  }
 }

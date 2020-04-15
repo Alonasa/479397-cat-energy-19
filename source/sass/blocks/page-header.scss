@@ -18,57 +18,85 @@
   display: block;
 }
 
-@media (max-width: $tablet-width) {
-  .page-header__toggle {
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo-wrapper {
+    @include indents-reset;
+    width: 174px;
     display: block;
-    width: 40px;
-    height: 29px;
+  }
+
+  .page-header__logo {
+    width: auto;
+    height: 59px;
     padding: 0;
-    margin-top: 17px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
 
-  .page-header__icon {
-    margin-left: auto;
+  .page-header__wrapper {
+    padding: 24px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+}
 
-  .page-header--opened .page-header__toggle-menu {
-    display: none;
-  }
+.page-header__toggle {
+  display: block;
+  width: 40px;
+  height: 29px;
+  padding: 0;
+  margin-top: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
-  .page-header--closed .page-header__toggle-menu {
+.page-header__icon {
+  margin-left: auto;
+}
+
+.page-header--opened .page-header__toggle-menu {
+  display: none;
+}
+
+.page-header--closed .page-header__toggle-menu {
+  display: block;
+}
+
+.page-header--opened .page-header__toggle--open {
+  display: block;
+}
+
+.page-header--closed .page-header__toggle--open {
+  display: none;
+}
+
+.page-header--closed .main-nav {
+  display: none;
+
+  &--active {
     display: block;
   }
+}
 
-  .page-header--opened .page-header__toggle--open {
-    display: block;
-  }
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
 
-  .page-header--closed .page-header__toggle--open {
-    display: none;
-  }
-
-  .page-header--closed .main-nav {
-    display: none;
-
-    &--active {
-      display: block;
-    }
-  }
-
-  .page-header--nojs .page-header__toggle {
-    display: none;
-  }
-
-  .page-header--nojs .main-nav {
-    display: block;
-  }
+.page-header--nojs .main-nav {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header--closed .main-nav {
+    display: block;
   }
 }

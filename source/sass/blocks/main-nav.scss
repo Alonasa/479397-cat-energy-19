@@ -16,3 +16,25 @@
   color: $black-three;
   border-top: 1px solid $border-c;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    width: 440px;
+    min-height: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__link {
+    padding: 0;
+    font-size: $font-18;
+    line-height: 1.39;
+    border: none;
+  }
+}

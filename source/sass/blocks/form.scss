@@ -39,16 +39,39 @@
 }
 
 .form__legend {
-  padding: 0 23px 0 19px;
+  margin: 0 auto;
+  padding: 0 19px 0 19px;
   position: absolute;
   top: -17px;
+  left: 0;
+  right: 0;
   font-size: 24px;
   line-height: 1;
+  font-weight: normal;
   background-color: #ffffff;
 }
 
 .form__legend-contact {
   width: 182px;
+  left: -97px;
+}
+
+.form__legend-comment {
+  width: 124px;
+  left: -158px;
+}
+
+.form__legend-additional {
+  width: 145px;
+  left: -137px;
+}
+
+.form__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form__personal-data {
@@ -58,9 +81,7 @@
 }
 
 .form__pet-info {
-  width: 280px;
-  height: 45px;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -73,21 +94,17 @@
   border: solid 1px $border-d;
 }
 
-.form__input-1 {
-  width: 229px;
-}
-
-.form__input-2 {
-  width: 204px;
-}
-
-.form__input-3 {
-  width: 172px;
+.form__input-pet {
+  flex-grow: 1;
 }
 
 .form__label {
   font-size: $font-16;
   text-transform: uppercase;
+}
+
+.form__pet-label {
+  padding-right: 14px;
 }
 
 .form__pet-problem {
@@ -97,16 +114,8 @@
 
 .form__radio-border {
   box-sizing: border-box;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
-
-.form__list {
-  @include list-reset;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  border-top: 1px solid $border-c;
+  border-bottom: 1px solid $border-c;
 }
 
 .form__personal-list {
@@ -134,8 +143,8 @@
 }
 
 .form__contact-list {
-  padding-top: 23px;
   min-height: 104px;
+  padding-top: 23px;
 }
 
 .form__contact-item {
@@ -203,4 +212,145 @@
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+}
+
+/*Tablet styles*/
+
+@media (min-width: $tablet-width) {
+  .form__description {
+    width: 325px;
+    padding: 21px 40px;
+    font-size: $font-20;
+    line-height: 1.5;
+  }
+
+  .form__header {
+    padding: 33px 0;
+  }
+
+  .form__consultation {
+    margin-top: 46px;
+  }
+
+  .form__wrapper-big {
+    width: 708px;
+  }
+
+  .form__label {
+    font-size: $font-20;
+  }
+
+  .form__input[placeholder],
+  .form__textarea[placeholder] {
+    padding: 10px 16px;
+    font-size: $font-20;
+  }
+
+  .form__pet-label {
+    padding-right: 20px;
+  }
+
+  .form__pet-info {
+    padding-bottom: 20px;
+  }
+
+  .form__radio-border {
+    border: none;
+    margin: 44px 0;
+  }
+
+  .form__personal-list {
+    min-height: 134px;
+    padding: 30px 0;
+    border: 1px solid $border-c;
+  }
+
+  .form__option {
+    padding-left: 88px;
+  }
+
+  .form__legend {
+    padding: 0 41px 0 39px;
+    top: -25px;
+    left: -116px;
+    font-size: $font-36;
+    text-align: center;
+  }
+
+  .form__legend-contact {
+    width: 514px;
+  }
+
+  .form__legend-comment {
+    width: 180px;
+    left: -448px;
+  }
+
+  .form__legend-additional {
+    width: 215px;
+    left: -415px;
+  }
+
+  .form__indents {
+    margin-top: 87px;
+    padding-top: 64px;
+  }
+
+  .form__contact-data {
+    margin-top: 53px;
+  }
+
+  .form__contact-list {
+    min-height: 124px;
+  }
+
+  .form__contact-label {
+    padding-right: 17px;
+  }
+
+  .form__message {
+    padding-top: 87px;
+  }
+
+  .form__textarea {
+    width: 630px;
+    height: 174px;
+  }
+
+  .form__additional-list {
+    width: 532px;
+    margin-top: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__additional-item {
+    width: 188px;
+  }
+
+  .form__option-check {
+    padding-left: 59px;
+  }
+
+  .form__option-checkbox + label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__send-indents {
+    margin: 11px auto 70px;
+    padding-left: 2px;
+  }
+
+  .form__send {
+    width: 525px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__required {
+    font-size: $font-16;
+  }
 }
