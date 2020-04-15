@@ -106,19 +106,21 @@
               <legend class="form__legend">Комментарий</legend>
               <div class="form__wrapper wrapper">
                 <label class="form__label" for="message" aria-label="Ваш комментарий"></label>
-                <textarea name="message" id="message" rows="5" cols="15" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form__textarea" name="message" id="message" rows="5" cols="15" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="form__additional form__fieldset form__indents">
               <legend class="form__legend">Дополнительно</legend>
-              <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
-              <label class="form__label form__option" for="sweetener">Сахарозаменитель</label>
-              <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="water" id="water">
-              <label class="form__label form__option" for="water">Питьевая вода</label>
-              <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
-              <label class="form__label form__option" for="milk">Молоко</label>
-              <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
-              <label class="form__label form__option" for="vitamins">Витамины</label>
+              <div class="form__wrapper wrapper">
+                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
+                <label class="form__label form__option" for="sweetener">Сахарозаменитель</label>
+                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="water" id="water">
+                <label class="form__label form__option" for="water">Питьевая вода</label>
+                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
+                <label class="form__label form__option" for="milk">Молоко</label>
+                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
+                <label class="form__label form__option" for="vitamins">Витамины</label>
+              </div>
             </fieldset>
             <div class="form__wrapper wrapper">
               <p class="form__send">

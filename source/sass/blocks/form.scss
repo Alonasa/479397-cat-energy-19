@@ -59,6 +59,7 @@
 
 .form__input {
   box-sizing: border-box;
+  opacity: 0.5;
   border: solid 1px $border-d;
 }
 
@@ -77,14 +78,6 @@
 .form__label {
   font-size: $font-16;
   line-height: 1.5;
-  text-transform: uppercase;
-}
-
-input[placeholder] {
-  padding: 10px 15px;
-  font-size: 16px;
-  line-height: 1.49;
-  font-family: inherit;
   text-transform: uppercase;
 }
 
@@ -128,10 +121,11 @@ input[placeholder] {
 
 .form__indents {
   margin-top: 42px;
-  padding: 65px 0 0;
+  padding: 42px 0 0;
 }
 
 .form__contact-list {
+  padding-top: 23px;
   min-height: 104px;
 }
 
@@ -148,4 +142,24 @@ input[placeholder] {
 
 .form__contact-input {
   flex-grow: 1;
+}
+
+.form__textarea {
+  width: 280px;
+  height: 150px;
+  opacity: 0.5;
+  border: solid 1px $border-d;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.form__input[placeholder],
+.form__textarea[placeholder] {
+  padding: 10px 13px;
+  font-size: 16px;
+  line-height: 1.49;
+  font-family: inherit;
+  text-transform: uppercase;
+  opacity: 1;
+  color: $greyish-brown;
 }
