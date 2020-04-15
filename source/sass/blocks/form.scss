@@ -20,6 +20,27 @@
   border: none;
 }
 
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  border-top: 3px solid $green-leaf;
+}
+
+.form__legend {
+  padding: 0 19px;
+  position: absolute;
+  top: -17px;
+  font-size: 24px;
+  line-height: 1;
+  background-color: #ffffff;
+}
+
+.form__legend-contact {
+  width: 182px;
+}
+
 .form__personal-data {
   padding-bottom: 9px;
   display: flex;
@@ -78,13 +99,17 @@ input[placeholder] {
   border-bottom: 1px solid #ededed;
 }
 
-.form__personal-program {
-  min-height: 112px;
-  padding: 22px 0;
+.form__list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.form__personal-list {
+  min-height: 112px;
+  padding: 22px 0;
 }
 
 .form__option {
@@ -99,4 +124,28 @@ input[placeholder] {
 
 .form__problem label {
   position: relative;
+}
+
+.form__indents {
+  margin-top: 42px;
+  padding: 65px 0 0;
+}
+
+.form__contact-list {
+  min-height: 104px;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__contact-label {
+  padding-right: 10px;
+}
+
+.form__contact-input {
+  flex-grow: 1;
 }
