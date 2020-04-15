@@ -55,44 +55,46 @@
         </div>
         <form class="form__consultation" method="get" action="https://echo.htmlacademy.ru">
           <div class="form__request">
-            <fieldset class="form__pet-data">
-              <div class="form_wrapper wrapper">
-                <ul class="form__personal-data form__list">
-                  <li class="form__pet-info">
-                    <label class="form__label form__pet-label" for="pet-name">Имя:*</label>
-                    <input class="form__input form__input-pet" type="text" name="pet-name" id="pet-name" placeholder="Барсик" autofocus/>
-                  </li>
-                  <li class="form__pet-info">
-                    <label class="form__label form__pet-label" for="weight">Вес (кг):*</label>
-                    <input class="form__input form__input-pet" type="text" name="weight" id="weight" placeholder="7"/>
-                  </li>
-                  <li class="form__pet-info">
-                    <label class="form__label form__pet-label" for="age">Возраст (лет):</label>
-                    <input class="form__input form__input-pet" type="text" name="age" id="age" placeholder="7"/>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-            <fieldset class="form__pet-problem form__fieldset">
-              <div class="form__radio-border">
-                <div class="form__wrapper wrapper">
-                  <ul class="form__personal-list form__list">
-                    <li class="form__problem">
-                      <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="slim" id="slimming" checked>
-                      <label class="form__label form__option form__program" for="slimming">Похудение</label>
+            <div class="form__top-wrapper">
+              <fieldset class="form__pet-data">
+                <div class="form__wrapper form__wrapper-small wrapper">
+                  <ul class="form__personal-data form__list">
+                    <li class="form__pet-info">
+                      <label class="form__label form__pet-label" for="pet-name">Имя:*</label>
+                      <input class="form__input form__input-pet" type="text" name="pet-name" id="pet-name" placeholder="Барсик" autofocus/>
                     </li>
-                    <li class="form__problem">
-                      <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="mass_gain" id="mass">
-                      <label class="form__label form__option form__program" for="mass">Набор массы</label>
+                    <li class="form__pet-info">
+                      <label class="form__label form__pet-label" for="weight">Вес (кг):*</label>
+                      <input class="form__input form__input-pet" type="text" name="weight" id="weight" placeholder="7"/>
                     </li>
-                    <li class="form__problem">
-                      <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="need_advice" id="advice">
-                      <label class="form__label form__option form__program" for="advice">Не знаю (Нужен ваш совет)</label>
+                    <li class="form__pet-info">
+                      <label class="form__label form__pet-label" for="age">Возраст (лет):</label>
+                      <input class="form__input form__input-pet" type="text" name="age" id="age" placeholder="7"/>
                     </li>
                   </ul>
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
+              <fieldset class="form__pet-problem form__fieldset">
+                <div class="form__radio-border">
+                  <div class="form__wrapper form__wrapper-small wrapper">
+                    <ul class="form__personal-list form__list">
+                      <li class="form__problem">
+                        <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="slim" id="slimming" checked>
+                        <label class="form__label form__option form__program" for="slimming">Похудение</label>
+                      </li>
+                      <li class="form__problem">
+                        <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="mass_gain" id="mass">
+                        <label class="form__label form__option form__program" for="mass">Набор массы</label>
+                      </li>
+                      <li class="form__problem">
+                        <input class="form__input form__option-radio visually-hidden" type="radio" name="product-type" value="need_advice" id="advice">
+                        <label class="form__label form__option form__program" for="advice">Не знаю (Нужен ваш совет)</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
             <fieldset class="form__contact-data form__fieldset form__indents">
               <div class="form__wrapper wrapper">
                 <label class="form__legend form__legend-contact">Контактные данные (владельца кота)</label>
@@ -162,6 +164,7 @@
           </div>
         </div>
         <picture class="contacts__map">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png"/>
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png"/>
           <img src="img/bg-map-mobile@1x.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="320" height="400">
         </picture>

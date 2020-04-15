@@ -38,3 +38,9 @@
     width: 283px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button--send {
+    width: 568px;
+  }
+}

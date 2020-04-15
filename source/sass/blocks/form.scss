@@ -321,6 +321,7 @@
     width: 532px;
     margin-top: 8px;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -348,6 +349,147 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .form__required {
+    font-size: $font-16;
+  }
+}
+
+/*Desktop styles*/
+
+@media (min-width: $desktop-width) {
+  .form__wrapper-big {
+    width: 1220px;
+  }
+
+  .form__header {
+    padding: 22px 0;
+  }
+
+  .form__description {
+    width: 325px;
+    padding: 32px 0;
+    font-size: $font-20;
+    line-height: 1.5;
+  }
+
+  .form__consultation {
+    margin-top: 35px;
+  }
+
+  .form__top-wrapper {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__wrapper-small {
+    width: 570px;
+  }
+
+  .form__label {
+    font-size: $font-20;
+  }
+
+  .form__input[placeholder],
+  .form__textarea[placeholder] {
+    padding: 10px 16px;
+    font-size: $font-20;
+  }
+
+  .form__pet-data {
+    width: 570px;
+  }
+
+  .form__pet-label {
+    padding-right: 20px;
+  }
+
+  .form__pet-info {
+    padding-bottom: 20px;
+  }
+
+  .form__pet-problem {
+    width: 570px;
+  }
+
+  .form__radio-border {
+    margin: 0;
+  }
+
+  .form__personal-list {
+    min-height: 134px;
+    padding: 30px 0;
+    border: 1px solid $border-c;
+  }
+
+  .form__option {
+    padding-left: 88px;
+  }
+
+  .form__legend {
+    left: -706px;
+    text-align: left;
+  }
+
+  .form__legend-comment {
+    left: -1038px;
+  }
+
+  .form__legend-additional {
+    left: -1005px;
+  }
+
+  .form__indents {
+    margin-top: 89px;
+  }
+
+  .form__contact-data {
+    margin-top: 63px;
+  }
+
+  .form__contact-list {
+    min-height: 52px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__contact-label {
+    padding-right: 17px;
+  }
+
+  .form__contact-item {
+    width: 570px;
+  }
+
+  .form__textarea {
+    width: 1220px;
+  }
+
+  .form__additional-list {
+    width: 1163px;
+    min-height: 45px;
+    margin-top: 10px;
+  }
+
+  .form__additional-item {
+    width: 188px;
+  }
+
+  .form__option-check {
+    padding-left: 59px;
+  }
+
+  .form__send-indents {
+    margin: 48px auto 79px;
+    padding-left: 3px;
+  }
+
+  .form__send {
+    width: 829px;
   }
 
   .form__required {
