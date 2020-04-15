@@ -104,7 +104,7 @@
             </fieldset>
             <fieldset class="form__message form__fieldset form__indents">
               <legend class="form__legend">Комментарий</legend>
-              <div class="form__wrapper wrapper">
+              <div class="form__wrapper wrapper form__message__wrapper">
                 <label class="form__label" for="message" aria-label="Ваш комментарий"></label>
                 <textarea class="form__textarea" name="message" id="message" rows="5" cols="15" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
@@ -112,23 +112,33 @@
             <fieldset class="form__additional form__fieldset form__indents">
               <legend class="form__legend">Дополнительно</legend>
               <div class="form__wrapper wrapper">
-                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
-                <label class="form__label form__option" for="sweetener">Сахарозаменитель</label>
-                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="water" id="water">
-                <label class="form__label form__option" for="water">Питьевая вода</label>
-                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
-                <label class="form__label form__option" for="milk">Молоко</label>
-                <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
-                <label class="form__label form__option" for="vitamins">Витамины</label>
+                <ul class="form__additional-list form__list">
+                  <li class="form__additional-item">
+                    <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
+                    <label class="form__label form__option" for="sweetener">Сахарозаменитель</label>
+                  </li>
+                  <li class="form__additional-item">
+                    <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="water" id="water">
+                    <label class="form__label form__option" for="water">Питьевая вода</label>
+                  </li>
+                  <li class="form__additional-item">
+                    <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
+                    <label class="form__label form__option" for="milk">Молоко</label>
+                  </li>
+                  <li class="form__additional-item">
+                    <input class="form__input form__option-checkbox visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
+                    <label class="form__label form__option" for="vitamins">Витамины</label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
-            <div class="form__wrapper wrapper">
-              <p class="form__send">
+            <div class="form__wrapper wrapper form__send-indents">
+              <div class="form__send">
                 <button class="form__send-button button button__grey-background button__action button--green button--send" type="submit" name="send-request">Отправить заявку</button>
-              </p>
-              <div class="form__notise">
-                <sup>*</sup>
-                <span class="form__required-notice">— Обязательные поля</span>
+                <p class="form__required">
+                  <sup>*</sup>
+                  <span class="form__required-notice">— Обязательные поля</span>
+                </p>
               </div>
             </div>
           </div>
@@ -136,7 +146,7 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__header">
+        <div class="contacts__header contacts__header--grey">
           <div class="contacts__wrapper wrapper">
             <h3 class="contacts__offer contacts__info">Приглашаем <br/> к сотрудничеству дилеров!</h3>
             <p class="contacts__address contacts__info">

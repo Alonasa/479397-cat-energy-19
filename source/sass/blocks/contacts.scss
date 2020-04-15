@@ -1,11 +1,14 @@
 .contacts {
   min-height: 476px;
-  margin-bottom: 38px;
   position: relative;
 }
 
 .contacts__header {
   background-color: $white;
+
+  &--grey {
+    background-color: $grey-back;
+  }
 }
 
 .contacts__wrapper {

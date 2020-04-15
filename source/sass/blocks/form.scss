@@ -20,6 +20,16 @@
   border: none;
 }
 
+.form__input[placeholder],
+.form__textarea[placeholder] {
+  padding: 10px 13px;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  opacity: 1;
+  color: $greyish-brown;
+}
+
 .form__fieldset {
   padding: 0;
   margin: 0;
@@ -29,7 +39,7 @@
 }
 
 .form__legend {
-  padding: 0 19px;
+  padding: 0 23px 0 19px;
   position: absolute;
   top: -17px;
   font-size: 24px;
@@ -77,7 +87,6 @@
 
 .form__label {
   font-size: $font-16;
-  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -144,6 +153,10 @@
   flex-grow: 1;
 }
 
+.form__message__wrapper {
+  line-height: 0;
+}
+
 .form__textarea {
   width: 280px;
   height: 150px;
@@ -153,13 +166,41 @@
   overflow: auto;
 }
 
-.form__input[placeholder],
-.form__textarea[placeholder] {
-  padding: 10px 13px;
-  font-size: 16px;
-  line-height: 1.49;
-  font-family: inherit;
-  text-transform: uppercase;
-  opacity: 1;
-  color: $greyish-brown;
+.form__additional-list {
+  margin-top: 5px;
+  min-height: 148px;
+}
+
+.form__additional-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__option-checkbox:hover + label,
+.form__option-checkbox:focus + label {
+  color: #663d15;
+}
+
+.form__option-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $border-d;
+}
+
+.form__send-indents {
+  margin: 39px auto 15px;
+}
+
+.form__required {
+  margin: 18px 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
 }
