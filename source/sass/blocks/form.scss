@@ -37,17 +37,16 @@
   border: none;
 }
 
-@media (max-width: $tablet-width) {
-  .form__fieldset::before {
-    position: absolute;
-    content: "";
-    width: 50vw;
-    height: 3px;
-    top: 0;
-    left: 50%;
-    background-color: $green-leaf;
-  }
+.form__fieldset::before {
+  position: absolute;
+  content: "";
+  width: 50vw;
+  height: 3px;
+  top: 0;
+  left: 50%;
+  background-color: $green-leaf;
 }
+
 
 .form__legend {
   margin: 0 auto;
@@ -259,6 +258,10 @@
 
   .form__fieldset {
     border-top: 3px solid $green-leaf;
+  }
+
+  .form__fieldset::before {
+    display: none;
   }
 
   .form__pet-label {
