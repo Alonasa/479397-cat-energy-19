@@ -286,16 +286,18 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__header">
+        <div class="contacts__header contacts__header--grey">
           <div class="contacts__wrapper wrapper">
             <h3 class="contacts__offer contacts__info">Приглашаем <br/> к сотрудничеству дилеров!</h3>
             <p class="contacts__address contacts__info">
               ул. Большая Конюшенная, д. 19/8
-              Санкт-Петербург
+              <span class="contacts__row-2">Санкт-Петербург</span>
             </p>
           </div>
         </div>
         <picture class="contacts__map">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png"/>
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png"/>
           <img src="img/bg-map-mobile@1x.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="320" height="400">
         </picture>
       </section>
