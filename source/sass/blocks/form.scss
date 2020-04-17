@@ -35,7 +35,18 @@
   margin: 0;
   position: relative;
   border: none;
-  border-top: 3px solid $green-leaf;
+}
+
+@media (max-width: $tablet-width) {
+  .form__fieldset::before {
+    position: absolute;
+    content: "";
+    width: 50vw;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    background-color: $green-leaf;
+  }
 }
 
 .form__legend {
@@ -244,6 +255,10 @@
   .form__textarea[placeholder] {
     padding: 10px 16px;
     font-size: $font-20;
+  }
+
+  .form__fieldset {
+    border-top: 3px solid $green-leaf;
   }
 
   .form__pet-label {
