@@ -17,6 +17,7 @@
 
 .button__grey {
   border: none;
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .button__grey-background {
@@ -29,7 +30,6 @@
 @media (min-width: $tablet-width) {
   .button {
     padding: 16px;
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: $font-20;
     line-height: 1;
   }
