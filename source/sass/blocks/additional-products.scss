@@ -1,19 +1,42 @@
 .additional-products {
   margin-bottom: 35px;
+  position: relative;
+}
+
+.additional-products::before {
+  position: absolute;
+  content: "";
+  width: 17vw;
+  height: 3px;
+  top: 0;
+  left: 83%;
+  background-color: #68b738;
 }
 
 .additional-products__header {
   margin: 0;
-  padding: 9px 0 35px;
+  position: absolute;
+  top: -13px;
   line-height: 1;
   font-size: $font-24;
   font-weight: normal;
-  border-bottom: 1px solid #cccccc;
 }
 
 .additional-products__list {
   @include list-reset;
+  padding-top: 47px;
   margin-bottom: 39px;
+  position: relative;
+}
+
+.additional-products__list::before {
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: 0;
+  background-color: #cccccc;
 }
 
 .additional-products__item {

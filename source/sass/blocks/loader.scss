@@ -4,8 +4,16 @@
   padding-bottom: 0;
 }
 
+.loader__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .loader__header {
   @include indents-reset;
+  width: 205px;
   padding-top: 79px;
   position: relative;
   font-size: $font-16;
@@ -34,6 +42,7 @@
 
   .loader__header {
     padding-top: 160px;
+    width: 178px;
     font-size: $font-20;
   }
 
