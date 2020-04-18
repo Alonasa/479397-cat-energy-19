@@ -78,11 +78,11 @@
   }
 
   .catalog__header {
-    padding: 33px 0;
+    padding: 33px 0 24px;
   }
 
   .catalog__list {
-    padding-top: 134px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -91,7 +91,7 @@
   .catalog__item {
     width: 324px;
     padding-bottom: 40px;
-    margin-bottom: 142px;
+    margin-top: 142px;
     background-color: $grey-back;
     border: none;
   }
