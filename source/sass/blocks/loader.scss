@@ -1,11 +1,12 @@
 .loader {
   text-align: center;
   border-bottom: 1px solid $border-c;
+  padding-bottom: 0;
 }
 
 .loader__header {
   @include indents-reset;
-  padding-top: 60px;
+  padding-top: 79px;
   font-size: $font-16;
   font-weight: normal;
   text-transform: uppercase;
@@ -21,4 +22,10 @@
 
 .loader__load-more {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .loader {
+    padding-bottom: 0;
+  }
 }

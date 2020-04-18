@@ -28,14 +28,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button {
-    line-height: 1;
-  }
-
   .button--send {
     width: 283px;
     padding: 16px;
     font-size: $font-20;
+    line-height: 1;
+  }
+
+  .button--buy {
+    width: 250px;
   }
 }
 
