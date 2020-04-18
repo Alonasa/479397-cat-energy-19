@@ -29,13 +29,13 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 16px;
-    font-size: $font-20;
     line-height: 1;
   }
 
   .button--send {
     width: 283px;
+    padding: 16px;
+    font-size: $font-20;
   }
 }
 

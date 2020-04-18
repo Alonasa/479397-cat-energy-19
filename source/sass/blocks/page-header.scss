@@ -14,7 +14,7 @@
 .page-header__logo {
   width: 191px;
   height: 39px;
-  padding: 11px 0 16px;
+  padding: 11px 0 15px;
   display: block;
 }
 
@@ -43,6 +43,10 @@
 
 .page-header--opened .page-header__toggle--open {
   display: block;
+}
+
+.page-header--closed {
+  border-bottom: 1px solid $border-c;
 }
 
 .page-header--closed .page-header__toggle--open {
@@ -92,6 +96,10 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header--closed {
+    border-bottom: none;
   }
 
   .page-header--closed .main-nav {
