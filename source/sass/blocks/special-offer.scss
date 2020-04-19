@@ -30,3 +30,14 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    margin-top: 90px;
+  }
+
+  .special-offer__header {
+    left: 40px;
+    text-align: center;
+  }
+}
