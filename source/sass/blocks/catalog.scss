@@ -72,6 +72,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 89px;
+  }
+
   .catalog__wrapper {
     width: 708px;
   }
