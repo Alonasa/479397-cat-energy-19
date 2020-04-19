@@ -61,6 +61,7 @@
 @media (min-width: $tablet-width) {
   .additional-products {
     border-top: 3px solid $green-leaf;
+    margin-bottom: 76px;
   }
 
   .additional-products::before,
@@ -86,6 +87,7 @@
 
   .additional-products__list {
     padding-top: 90px;
+    margin-bottom: 69px;
   }
 
   .additional-products__item {
@@ -94,7 +96,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid rgba(205, 205, 205, 0.5);;
+    border: 1px solid rgba(205, 205, 205, 0.5);
   }
 
   .additional-products__item-header {

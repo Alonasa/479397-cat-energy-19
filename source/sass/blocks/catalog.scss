@@ -145,3 +145,44 @@
     border-bottom: 1px solid $border-d;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    width: 1220px;
+  }
+
+  .catalog__header {
+    padding: 22px 0;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
+
+  .catalog__item-wrapper {
+    width: 169px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .catalog__picture-link {
+    height: 217px;
+    position: absolute;
+    left: -38px;
+    top: -6px;
+  }
+
+  .catalog__picture {
+    width: 245px;
+  }
+
+  .catalog__item-info {
+    padding-top: 163px;
+  }
+
+  .catalog__item-description {
+    width: 169px;
+  }
+}

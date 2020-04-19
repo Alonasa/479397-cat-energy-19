@@ -22,3 +22,11 @@
 .special-offer__picture {
   line-height: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .special-offer__header {
+    padding-top: 71px;
+    left: 423px;
+    text-align: left;
+  }
+}
