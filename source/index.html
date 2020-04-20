@@ -21,10 +21,10 @@
             </picture>
           </a>
           <button class="page-header__toggle button__toggler" type="button" aria-label="Открыть меню">
-            <svg class="page-header__toggle-menu page-header__toggle--open page-header__icon" width="19" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <svg class="page-header__toggle-menu page-header__toggle--open page-header__icon" width="19" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background: new 0 0 18 18;" xml:space="preserve">
               <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "/>
             </svg>
-            <svg class="page-header__toggle-menu page-header__icon" width="25" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+            <svg class="page-header__toggle-menu page-header__icon" width="25" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background: new 0 0 24 18;" xml:space="preserve">
               <rect y="16" width="24" height="2"/>
               <rect y="8" width="24" height="2"/>
               <rect width="24" height="2"/>
@@ -139,27 +139,36 @@
           <div class="example-slider__wrapper">
             <h2 class="visually-hidden">Ваши результаты</h2>
             <ul class="example-slider__list">
-              <li class="example-slider__item">
+              <li class="example-slider__item example-slider--choosen">
                 <picture class="example-slider__picture">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png"/>
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png"/>
                   <img src="/img/before-mobile@1x.png" alt="До Cat Energy" width="320" height="240">
                 </picture>
               </li>
               <li class="example-slider__item">
                 <picture class="example-slider__picture">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png"/>
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png"/>
                   <img src="/img/after-mobile@1x.png" alt="После Cat Energy" width="320" height="240">
                 </picture>
               </li>
             </ul>
             <div class="example-slider__controllers">
-              <button class="example-slider__controller example-slider--checked" type="button" aria-label="Выбрать Слайд 1">Было</button>
-              <button class="example-slider__controller" type="button" aria-label="Выбрать сайд 2">Стало</button>
+              <span class="example-slider__buttons example-slider__before">Было</span>
+              <span class="example-slider__buttons example-slider__after">Стало</span>
+              <div class="example-slider__navigation">
+                <div class="example-slider__toggle"></div>
+                <button class="example-slider__controller example-slider--checked" type="button" aria-label="Выбрать Слайд 1"></button>
+                <button class="example-slider__controller" type="button" aria-label="Выбрать сайд 2"></button>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__header contacts__header--grey">
+        <div class="contacts__header">
           <div class="contacts__wrapper wrapper">
             <h3 class="contacts__offer contacts__info">Приглашаем <br/> к сотрудничеству дилеров!</h3>
             <p class="contacts__address contacts__info">
@@ -178,7 +187,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo" href="#">
-          <svg class="page-footer__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve" width="128" height="24">
+          <svg class="page-footer__logo-image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background: new 0 0 127.8 23.4;" xml:space="preserve" width="128" height="24">
               <style type="text/css">
                 .st0 {
                   fill: #111111;
