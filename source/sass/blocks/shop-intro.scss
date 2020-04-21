@@ -1,6 +1,6 @@
 .shop-intro {
-  margin-bottom: 197px;
   color: $white;
+  min-height: 502px;
 }
 
 .shop-intro__container {
@@ -12,6 +12,7 @@
 
 .shop-intro__wrapper {
   position: relative;
+  text-align: center;
 }
 
 .shop-intro__header {
@@ -21,14 +22,12 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 1;
-  text-align: center;
 }
 
 .shop-intro__description {
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 166px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -39,7 +38,6 @@
 
 .shop-intro__image {
   width: 280px;
-  height: 270px;
   margin: auto;
   position: absolute;
   top: -139px;
@@ -50,19 +48,49 @@
 .shop-intro__selection {
   position: absolute;
   bottom: -175px;
+  left: 0;
   font-size: 14px;
   line-height: 1.45;
 }
 
 @media (min-width: $tablet-width) {
+  .shop-intro {
+    min-height: 843px;
+  }
+
+  .shop-intro__container {
+    background: none;
+  }
+
   .shop-intro__wrapper {
-    width: 528px;
+    width: 534px;
+    color: $black-three;
+    font-size: $font-20;
+    text-align: left;
   }
 
   .shop-intro__header {
     width: 100%;
-    padding-top: 32px;
+    padding: 33px 0;
     font-size: 60px;
-    text-align: left;
+  }
+
+  .shop-intro__description {
+    padding-top: 5px;
+  }
+
+  .shop-intro__image {
+    width: 708px;
+    top: -148px;
+    left: -88px;
+  }
+
+  .shop-intro__selection {
+    bottom: 69px;
+    left: 2px;
+    font-size: 20px;
+    line-height: 1.61;
+    padding: 10px;
+    width: 245px;
   }
 }
