@@ -36,3 +36,38 @@
 .shop-programs__name-mass {
   padding-left: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .shop-programs__wrapper {
+    width: 708px;
+  }
+
+  .shop-programs__item {
+    padding: 44px 52px 60px;
+    margin-bottom: 30px;
+  }
+
+  .shop-programs__name {
+    padding: 0;
+    padding-top: 32px;
+    font-size: 36px;
+    line-height: 1.03;
+    text-align: left;
+  }
+
+  .shop-programs__description {
+    width: 373px;
+    padding: 9px 0 36px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: none;
+  }
+
+  .shop-programs__catalog {
+    font-size: 20px;
+  }
+
+  .shop-programs__description-slim {
+    width: 344px;
+  }
+}
