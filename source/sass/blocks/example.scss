@@ -75,3 +75,64 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__header {
+    padding: 43px 0 48px;
+    font-size: $font-60;
+  }
+
+  .example__description {
+    width: 690px;
+    margin-bottom: 27px;
+    font-size: $font-16;
+    line-height: 1.5;
+  }
+
+  .example__name {
+    width: 366px;
+  }
+
+  .example__value {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 2.15;
+  }
+
+  .example__item-description {
+    width: 354px;
+    justify-content: unset;
+  }
+
+  .example__value-description {
+    width: 114px;
+    padding: 0;
+    margin-top: -9px;
+    font-size: $font-14;
+  }
+
+  .example__weight {
+    margin-right: 76px;
+    margin-left: 18px;
+  }
+
+  .example__time {
+    width: 142px;
+  }
+
+  .example__expenses {
+    width: 175px;
+    margin-top: 34px;
+    font-size: $font-20;
+    line-height: 1.4;
+    text-align: right;
+  }
+}

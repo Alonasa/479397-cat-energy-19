@@ -34,7 +34,7 @@
 
   .working-principles__header {
     margin: 0;
-    font-size: 60px;
+    font-size: $font-60;
     margin-top: 46px;
   }
 
@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: $font-16;
   }
 
   .working-principles__item {

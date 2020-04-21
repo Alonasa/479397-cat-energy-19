@@ -72,7 +72,7 @@
   .shop-intro__header {
     width: 100%;
     padding: 33px 0;
-    font-size: 60px;
+    font-size: $font-60;
   }
 
   .shop-intro__description {
@@ -88,7 +88,7 @@
   .shop-intro__selection {
     bottom: 69px;
     left: 2px;
-    font-size: 20px;
+    font-size: $font-20;
     line-height: 1.61;
     padding: 10px;
     width: 245px;

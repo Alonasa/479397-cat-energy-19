@@ -50,7 +50,7 @@
   .shop-programs__name {
     padding: 0;
     padding-top: 32px;
-    font-size: 36px;
+    font-size: $font-36;
     line-height: 1.03;
     text-align: left;
   }
@@ -58,13 +58,13 @@
   .shop-programs__description {
     width: 373px;
     padding: 9px 0 36px;
-    font-size: 16px;
+    font-size: $font-16;
     line-height: 1.5;
     border: none;
   }
 
   .shop-programs__catalog {
-    font-size: 20px;
+    font-size: $font-20;
   }
 
   .shop-programs__description-slim {
