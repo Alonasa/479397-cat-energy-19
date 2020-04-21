@@ -66,3 +66,65 @@
 .example-slider--checked {
   background-color: #68b738;
 }
+
+@media (min-width: $tablet-width) {
+  .example-slider__wrapper {
+    width: 708px;
+    padding-bottom: 68px;
+  }
+
+  .example-slider__list {
+    padding-bottom: 349px;
+    position: relative;
+  }
+
+  .example-slider__item {
+    width: 690px;
+    position: absolute;
+    top: -184px;
+    left: 16px;
+  }
+
+  .example-slider__controllers {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example-slider__navigation {
+    @include indents-reset;
+    width: 430px;
+    height: 6px;
+    position: relative;
+    border: none;
+    background-color: #dcdcdc;
+  }
+
+  .example-slider__buttons {
+    padding-bottom: 4px;
+    position: unset;
+    font-size: $font-20;
+    border-bottom: 1px dotted $border-d;
+  }
+
+  .example-slider__after {
+    order: 2;
+  }
+
+  .example-slider--checked {
+    display: none;
+  }
+
+  .example-slider__toggle {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 201px;
+    top: -14px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 12px #ffffff;
+    border-radius: 50%;
+    background-color: $green-leaf;
+  }
+}
