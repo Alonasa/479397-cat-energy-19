@@ -94,3 +94,45 @@
     width: 245px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .shop-intro {
+    min-height: 610px;
+  }
+
+  .shop-intro__wrapper {
+    width: 1060px;
+    position: relative;
+  }
+
+  .shop-intro__container::after {
+    width: 721px;
+    height: 696px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 719px;
+    overflow: hidden;
+    z-index: -1;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat center $green-leaf;
+    text-align: left;
+  }
+
+  .shop-intro__header {
+    width: 50%;
+    margin: 0;
+    padding: 56px 0 33px;
+    font-size: 60px;
+  }
+
+  .shop-intro__selection {
+    bottom: 64px;
+    left: 0;
+  }
+
+  .shop-intro__image {
+    width: 552px;
+    top: -430px;
+    left: 232px;
+  }
+}
