@@ -43,10 +43,25 @@
   .main-nav__list {
     min-width: 478px;
     min-height: 60px;
+    padding-top: 12px;
+    box-sizing: border-box;
   }
 
   .main-nav__link {
+    padding-bottom: 8px;
     font-size: $font-20;
     line-height: 1.25;
+  }
+
+  .main-nav__link-main {
+    color: $white;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid white;
+  }
+
+  .main-nav__link-main:hover {
+    border-bottom: 2px solid white;
   }
 }
