@@ -1,5 +1,6 @@
 .example {
   background-color: $grey-back;
+  padding-bottom: 40px;
 }
 
 .example__header {
@@ -73,4 +74,126 @@
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding-bottom: 0;
+    background-color: $white;
+  }
+
+  .example__wrapper {
+    width: 708px;
+    padding-bottom: 243px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__header {
+    padding: 43px 0 48px;
+    font-size: $font-60;
+  }
+
+  .example__description {
+    width: 690px;
+    margin-bottom: 27px;
+    font-size: $font-16;
+    line-height: 1.5;
+  }
+
+  .example__name {
+    width: 366px;
+  }
+
+  .example__value {
+    width: 162px;
+    height: 72px;
+    font-size: 30px;
+    line-height: 2.15;
+  }
+
+  .example__item-description {
+    width: 354px;
+    justify-content: unset;
+  }
+
+  .example__value-description {
+    width: 114px;
+    padding: 0;
+    margin-top: -9px;
+    font-size: $font-14;
+    background-color: $white;
+  }
+
+  .example__weight {
+    margin-right: 76px;
+    margin-left: 18px;
+  }
+
+  .example__time {
+    width: 142px;
+  }
+
+  .example__expenses {
+    width: 175px;
+    margin-top: 34px;
+    font-size: $font-20;
+    line-height: 1.4;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    background: linear-gradient(to right, $grey-back 1045px, #eaeaea 1045px);
+  }
+
+  .example::before {
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    content: "";
+    top: -31px;
+    left: 0;
+    background-color: $white;
+  }
+
+  .example__container {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__wrapper {
+    margin: 0;
+    padding-bottom: 52px;
+    width: 554px;
+  }
+
+  .example__header {
+    width: 554px;
+    padding: 24px 0 75px;
+    z-index: 10;
+  }
+
+  .example__description {
+    width: 435px;
+    margin: 70px 0 43px;
+  }
+
+  .example__expenses {
+    width: 326px;
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__value-description {
+    background-color: $grey-back;
+  }
 }

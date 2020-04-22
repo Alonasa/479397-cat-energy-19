@@ -1,11 +1,21 @@
 .loader {
   text-align: center;
   border-bottom: 1px solid $border-c;
+  padding-bottom: 0;
+}
+
+.loader__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .loader__header {
   @include indents-reset;
-  padding-top: 60px;
+  width: 205px;
+  padding-top: 79px;
+  position: relative;
   font-size: $font-16;
   font-weight: normal;
   text-transform: uppercase;
@@ -21,4 +31,40 @@
 
 .loader__load-more {
   margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .loader {
+    padding-bottom: 0;
+    background-color: $white;
+    border: 1px solid $border-c;
+  }
+
+  .loader__header {
+    padding-top: 160px;
+    width: 178px;
+    font-size: $font-20;
+  }
+
+  .loader__description {
+    width: 170px;
+    padding-top: 27px;
+    margin-bottom: 82px;
+    font-size: $font-16;
+  }
+
+  .loader__load-more {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .loader__load-more {
+    width: 168px;
+  }
+
+  .loader__header {
+    width: 170px;
+    padding-top: 162px;
+  }
 }

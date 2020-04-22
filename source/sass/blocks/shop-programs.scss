@@ -3,12 +3,6 @@
   box-sizing: border-box;
 }
 
-.shop-programs__selection {
-  margin-bottom: 23px;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
 .shop-programs__item {
   padding: 0 20px;
   padding-bottom: 21px;
@@ -20,10 +14,22 @@
   @include indents-reset;
   padding-top: 33px;
   padding-left: 10px;
+  position: relative;
   font-weight: normal;
   font-size: $font-24;
   text-align: center;
   text-transform: uppercase;
+}
+
+.shop-programs__name::before {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 2px;
+  top: 24px;
+  content: "";
+  border-radius: 50%;
+  background-color: $green-leaf;
 }
 
 .shop-programs__description {
@@ -41,4 +47,76 @@
 
 .shop-programs__name-mass {
   padding-left: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .shop-programs__wrapper {
+    width: 708px;
+  }
+
+  .shop-programs__item {
+    padding: 44px 52px 60px;
+    margin-bottom: 30px;
+  }
+
+  .shop-programs__name {
+    padding: 0;
+    padding-top: 32px;
+    font-size: $font-36;
+    line-height: 1.03;
+    text-align: left;
+  }
+
+  .shop-programs__name::before {
+    width: 200px;
+    height: 200px;
+    left: 394px;
+    top: 48px;
+  }
+
+  .shop-programs__description {
+    width: 373px;
+    padding: 9px 0 36px;
+    font-size: $font-16;
+    line-height: 1.5;
+    border: none;
+  }
+
+  .shop-programs__catalog {
+    font-size: $font-20;
+  }
+
+  .shop-programs__description-slim {
+    width: 344px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shop-programs__wrapper {
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .shop-programs__item {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .shop-programs__name {
+    padding-left: 162px;
+  }
+
+  .shop-programs__name::before {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 3px;
+  }
+
+  .shop-programs__description {
+    width: auto;
+    padding: 57px 0 13px;
+  }
 }

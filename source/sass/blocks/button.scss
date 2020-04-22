@@ -15,9 +15,42 @@
   background-color: $green-leaf;
 }
 
+.button__grey {
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
 .button__grey-background {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: $grey-back;
   border: none;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .button--send {
+    width: 283px;
+    padding: 16px;
+    font-size: $font-20;
+    line-height: 1;
+  }
+
+  .button--buy {
+    width: 250px;
+  }
+
+  .button--additional {
+    width: 633px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--send {
+    width: 568px;
+  }
+
+  .button--additional {
+    width: 245px;
+    margin: 17px 0;
+  }
 }

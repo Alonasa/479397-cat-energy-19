@@ -1,6 +1,12 @@
 .header {
   margin: 0;
-  font-size: 36px;
+  font-size: $font-36;
   line-height: 1;
   font-weight: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    font-size: $font-60;
+  }
 }
