@@ -143,3 +143,57 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    background: linear-gradient(to right, $grey-back 1045px, #eaeaea 1045px);
+  }
+
+  .example::before {
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    content: "";
+    top: -31px;
+    left: 0;
+    background-color: $white;
+  }
+
+  .example__container {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__wrapper {
+    margin: 0;
+    padding-bottom: 52px;
+    width: 554px;
+  }
+
+  .example__header {
+    width: 554px;
+    padding: 24px 0 75px;
+    z-index: 10;
+  }
+
+  .example__description {
+    width: 435px;
+    margin: 70px 0 43px;
+  }
+
+  .example__expenses {
+    width: 326px;
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__value-description {
+    background-color: $grey-back;
+  }
+}
