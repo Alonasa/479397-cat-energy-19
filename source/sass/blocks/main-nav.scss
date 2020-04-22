@@ -25,18 +25,34 @@
   .main-nav__list {
     width: 440px;
     min-height: 59px;
+    padding-top: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 
   .main-nav__link {
     padding: 0;
+    padding-bottom: 8px;
     font-size: $font-18;
     line-height: 1.39;
     border: none;
   }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $green-leaf;
+  }
+
+  .main-nav__link-main--active {
+    border-bottom: 2px solid $green-leaf;
+  }
+
+  .main-nav__link:hover {
+    opacity: 0.6;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -57,11 +73,7 @@
     color: $white;
   }
 
-  .main-nav__link--active {
-    border-bottom: 2px solid white;
-  }
-
-  .main-nav__link-main:hover {
+  .main-nav__link-main--active {
     border-bottom: 2px solid white;
   }
 }
