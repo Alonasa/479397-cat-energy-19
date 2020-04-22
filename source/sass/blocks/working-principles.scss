@@ -18,8 +18,19 @@
 }
 
 .working-principles__item {
+  position: relative;
   padding-left: 80px;
   margin-bottom: 26px;
+}
+
+.working-principles__item::before {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  background-color: $green-leaf;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,8 +66,40 @@
     margin-top: 71px;
   }
 
+  .working-principles__item::before {
+    width: 80px;
+    height: 80px;
+    top: 2px;
+  }
+
   .working-principles__description {
     margin-top: 33px;
     line-height: 1.5;
+  }
+
+  .working-principles__break {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .working-principles {
+    border: none;
+  }
+
+  .working-principles__wrapper {
+    width: 1220px;
+  }
+
+  .working-principles__header {
+    margin-top: 42px;
+  }
+
+  .working-principles__list {
+    width: 1224px;
+  }
+
+  .working-principles__item::before {
+    top: 1px;
   }
 }
