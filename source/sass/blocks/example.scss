@@ -147,7 +147,7 @@
 @media (min-width: $desktop-width) {
   .example {
     position: relative;
-    background: linear-gradient(to right, $grey-back 1045px, #eaeaea 1045px);
+    background: linear-gradient(to right, $grey-back 1045px, $light 1045px);
   }
 
   .example::before {

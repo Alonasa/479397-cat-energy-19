@@ -18,6 +18,14 @@
   display: block;
 }
 
+.page-header__logo:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
 .page-header__toggle {
   display: block;
   width: 40px;

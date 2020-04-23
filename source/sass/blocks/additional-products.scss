@@ -10,7 +10,7 @@
   height: 3px;
   top: 0;
   left: 83%;
-  background-color: #68b738;
+  background-color: $green-leaf;
 }
 
 .additional-products__header {
@@ -36,12 +36,12 @@
   content: "";
   top: 45px;
   left: 0;
-  background-color: #cccccc;
+  background-color: $light-cream;
 }
 
 .additional-products__item {
   padding-bottom: 17px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid $light-cream;
 }
 
 .additional-products__item-header {
@@ -148,7 +148,7 @@
     padding: 0;
     margin-bottom: -3px;
     border: none;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid $light-cream;
     justify-content: unset;
   }
 

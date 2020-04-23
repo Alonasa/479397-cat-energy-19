@@ -9,9 +9,21 @@
   text-align: center;
 }
 
+.page-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active {
+  opacity: 0.6;
+}
+
 .page-footer__social {
   border-top: 1px solid $border-d;
   border-bottom: 1px solid $border-d;
+}
+
+.page-footer__social-link:active {
+  opacity: 0.3;
 }
 
 .page-footer__social-list {
