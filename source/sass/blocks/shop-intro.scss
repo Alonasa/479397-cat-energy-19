@@ -100,23 +100,22 @@
 @media (min-width: $desktop-width) {
   .shop-intro {
     min-height: 610px;
+    position: relative;
   }
 
   .shop-intro__wrapper {
     width: 1060px;
-    position: relative;
   }
 
-  .shop-intro__container::after {
-    width: 721px;
+  .shop-intro__background {
+    width: 50%;
     height: 696px;
     position: absolute;
-    content: "";
-    top: 0;
-    left: 719px;
-    overflow: hidden;
+    top: -166px;
+    left: 50%;
     z-index: -1;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat center $green-leaf;
+    background-size: cover;
     text-align: left;
   }
 
