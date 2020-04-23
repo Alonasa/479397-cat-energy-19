@@ -11,6 +11,7 @@
   display: block;
   box-sizing: border-box;
   font-size: $font-20;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
   color: $black-three;
@@ -37,6 +38,7 @@
     padding: 0;
     padding-bottom: 8px;
     font-size: $font-18;
+    font-weight: 400;
     line-height: 1.39;
     border: none;
   }
