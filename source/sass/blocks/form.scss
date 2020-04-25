@@ -28,6 +28,21 @@
   text-transform: uppercase;
   opacity: 1;
   color: $greyish-brown;
+  border-color: rgba(205, 205, 205, 0.5);
+}
+
+.form__input[placeholder]:hover,
+.form__textarea[placeholder]:hover {
+  border-color: $border-d;
+}
+
+.form__input[placeholder]:focus,
+.form__textarea[placeholder]:focus {
+  outline: solid 2px $greyish-brown;
+}
+
+.form__input[placeholder]:invalid {
+  outline: solid 2px #ff8282;
 }
 
 .form__fieldset {
@@ -58,7 +73,7 @@
   font-size: 24px;
   line-height: 1;
   font-weight: normal;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .form__legend-contact {
@@ -102,6 +117,14 @@
   box-sizing: border-box;
   opacity: 0.5;
   border: solid 1px $border-d;
+}
+
+.form__input:hover + label {
+  color: $black;
+}
+
+.form__input:disabled + label {
+  opacity: 0.3;
 }
 
 .form__input-pet {
@@ -197,11 +220,6 @@
   user-select: none;
 }
 
-.form__option-checkbox:hover + label,
-.form__option-checkbox:focus + label {
-  color: #663d15;
-}
-
 .form__option-checkbox + label::before,
 .form__option-radio + label::before {
   content: "";
@@ -253,6 +271,7 @@
 
   .form__label {
     font-size: $font-20;
+    color: $black;
   }
 
   .form__input[placeholder],

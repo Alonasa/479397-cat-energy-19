@@ -4,6 +4,7 @@
 }
 
 .shop-intro__container {
+  width: $mobile-width;
   margin: 0 auto;
   box-sizing: border-box;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat center $green-leaf;
@@ -47,7 +48,7 @@
 
 .shop-intro__selection {
   position: absolute;
-  bottom: -175px;
+  top: 440px;
   left: 0;
   font-size: 14px;
   line-height: 1.45;
@@ -59,6 +60,7 @@
   }
 
   .shop-intro__container {
+    width: 100%;
     background: none;
   }
 
@@ -86,7 +88,7 @@
   }
 
   .shop-intro__selection {
-    bottom: 69px;
+    top: 262px;
     left: 2px;
     font-size: $font-20;
     line-height: 1.61;
@@ -98,23 +100,22 @@
 @media (min-width: $desktop-width) {
   .shop-intro {
     min-height: 610px;
+    position: relative;
   }
 
   .shop-intro__wrapper {
     width: 1060px;
-    position: relative;
   }
 
-  .shop-intro__container::after {
-    width: 721px;
+  .shop-intro__background {
+    width: 50%;
     height: 696px;
     position: absolute;
-    content: "";
-    top: 0;
-    left: 719px;
-    overflow: hidden;
+    top: -166px;
+    left: 50%;
     z-index: -1;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat center $green-leaf;
+    background-size: cover;
     text-align: left;
   }
 
@@ -126,7 +127,7 @@
   }
 
   .shop-intro__selection {
-    bottom: 64px;
+    top: 290px;
     left: 0;
   }
 

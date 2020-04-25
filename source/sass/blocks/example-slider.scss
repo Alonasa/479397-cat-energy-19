@@ -68,6 +68,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example-slider {
+    background: linear-gradient(to right, $grey-back 50%, $light 50%);
+  }
+
   .example-slider__wrapper {
     width: 708px;
     padding-bottom: 68px;
@@ -98,7 +102,8 @@
     height: 6px;
     position: relative;
     border: none;
-    background-color: #dcdcdc;
+    background-color: $slider-back;
+    z-index: 1;
   }
 
   .example-slider__buttons {
@@ -106,6 +111,14 @@
     position: unset;
     font-size: $font-20;
     border-bottom: 1px dotted $border-d;
+  }
+
+  .example-slider__buttons:hover {
+    border-bottom: 1px solid $border-d;
+  }
+
+  .example-slider__buttons:active {
+    border: none;
   }
 
   .example-slider__after {
@@ -131,6 +144,26 @@
     border-radius: 50%;
     background-color: $green-leaf;
   }
+
+  .example-slider__toggle:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .example-slider__toggle:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .example-slider__toggle:active::after {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    content: "";
+    top: -14px;
+    left: -14px;
+    background-color: $green-leaf;
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -138,7 +171,7 @@
     padding: 0;
     margin-top: 159px;
     width: 666px;
-    background-color: transparent;
+    background: linear-gradient(to right, #f2f2f2 57.2%, #eaeaea 57.2%);
   }
 
   .example-slider__wrapper {
