@@ -57,6 +57,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: $font-16;
+    counter-reset: listCounter;
   }
 
   .working-principles__item {
@@ -64,6 +65,19 @@
     padding: 80px 0 44px;
     margin: 0;
     margin-top: 71px;
+    counter-increment: listCounter;
+  }
+
+  .working-principles__item::after {
+    width: 114px;
+    content: counter(listCounter);
+    font-size: 281px;
+    font-family: "Oswald", sans-serif;
+    color: $grey-back;
+    position: absolute;
+    top: -79px;
+    right: 23px;
+    z-index: -1;
   }
 
   .working-principles__item::before {
