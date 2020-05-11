@@ -35,8 +35,8 @@
   }
 }
 
-@media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
-  (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
+@media (min-width: $mobile-width) and (min-resolution: $retina-dpi),
+  (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
   .icon::before {
     width: 50px;
     height: 50px;
