@@ -137,3 +137,14 @@
     left: 232px;
   }
 }
+
+@media (min-width: $desktop-width) and (min-resolution: $retina-dpi),
+  (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
+  .shop-intro__background {
+    width: 50%;
+    height: 696px;
+    background: url("../img/index-background-desktop@2x.jpg") no-repeat center $green-leaf;
+    background-size: cover;
+    text-align: left;
+  }
+}
