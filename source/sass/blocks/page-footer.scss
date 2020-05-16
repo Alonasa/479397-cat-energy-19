@@ -5,6 +5,7 @@
 
 .page-footer__logo {
   margin-bottom: 29px;
+  position: relative;
   display: block;
   text-align: center;
 }
@@ -15,6 +16,10 @@
 
 .page-footer__logo:active {
   opacity: 0.6;
+}
+
+.page-footer__logo-image:hover {
+  fill: $black-three;
 }
 
 .page-footer__social {
