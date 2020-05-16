@@ -231,6 +231,27 @@
   border: 1px solid $border-d;
 }
 
+.form__option-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  top: 3px;
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.form__option-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 9px;
+  top: 4px;
+  background-color: $green-leaf;
+}
+
 .form__option-radio + label::before {
   border-radius: 50%;
 }
@@ -384,6 +405,18 @@
   .form__option-radio + label::before {
     left: 29px;
     top: -6px;
+  }
+
+  .form__option-checkbox:checked + label::after {
+    left: 12px;
+    top: 8px;
+  }
+
+  .form__option-radio:checked + label::after {
+    width: 18px;
+    height: 18px;
+    left: 40px;
+    top: 5px;
   }
 
   .form__send-indents {
