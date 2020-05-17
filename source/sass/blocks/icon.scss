@@ -34,28 +34,3 @@
     left: 15px;
   }
 }
-
-@media (min-width: $mobile-width) and (min-resolution: $retina-dpi),
-  (min-width: $mobile-width) and (min-resolution: $retina-dppx) {
-  .icon::before {
-    width: 50px;
-    height: 50px;
-    background-size: cover;
-  }
-
-  .icon--organic::before {
-    background-image: url("../img/advantage-leaf@2x.png");
-  }
-
-  .icon--mix::before {
-    background-image: url("../img/advantage-powder@2x.png");
-  }
-
-  .icon--meal::before {
-    background-image: url("../img/advantage-dining@2x.png");
-  }
-
-  .icon--time::before {
-    background-image: url("../img/advantage-clock@2x.png");
-  }
-}
