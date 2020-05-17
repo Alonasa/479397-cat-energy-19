@@ -181,6 +181,7 @@
 }
 
 .form__contact-item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -193,6 +194,13 @@
 
 .form__contact-input {
   flex-grow: 1;
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 15px;
+  left: 246px;
+  fill: $greyish-brown;
 }
 
 .form__message__wrapper {
@@ -371,6 +379,18 @@
     padding-right: 17px;
   }
 
+  .form__input-icon {
+    left: 595px;
+  }
+
+  .form__input-mail[placeholder] {
+    padding-left: 25px;
+  }
+
+  .form__icon-mail {
+    top: 20px;
+  }
+
   .form__message {
     padding-top: 87px;
   }
@@ -544,6 +564,14 @@
 
   .form__contact-item {
     width: 570px;
+  }
+
+  .form__input-icon {
+    left: 532px;
+  }
+
+  .form__input-mail[placeholder] {
+    padding-left: 25px;
   }
 
   .form__textarea {
