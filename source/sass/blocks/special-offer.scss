@@ -6,6 +6,13 @@
   flex-wrap: wrap;
 }
 
+.special-offer__gift {
+  position: absolute;
+  content: "";
+  top: 66px;
+  fill: $white;
+}
+
 .special-offer__header {
   width: 165px;
   margin: 0;
@@ -29,15 +36,26 @@
     left: 423px;
     text-align: left;
   }
+
+  .special-offer__gift {
+    top: 65px;
+    left: 91px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .special-offer {
-    margin-top: 90px;
+    margin-top: 92px;
   }
 
   .special-offer__header {
+    padding-top: 187px;
     left: 40px;
     text-align: center;
+  }
+
+  .special-offer__gift {
+    top: 65px;
+    left: 96px;
   }
 }
