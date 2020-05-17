@@ -42,7 +42,15 @@
 }
 
 .form__input[placeholder]:invalid {
-  outline: solid 2px #ff8282;
+  outline: solid 2px $error;
+}
+
+.form__contact-input[placeholder]:focus + .form__input-icon {
+  fill: $green-leaf;
+}
+
+.form__contact-input[placeholder]:invalid + .form__input-icon {
+  fill: $error;
 }
 
 .form__fieldset {
