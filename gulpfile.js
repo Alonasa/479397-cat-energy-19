@@ -7,6 +7,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
+var jsmin = require("gulp-uglify");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -54,6 +55,15 @@ gulp.task("sprite", function () {
   }))
  .pipe(rename("sprite.svg"))
  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("jsmin", function() {
+  return gulp.src("js/*.js")
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("html", function () {
