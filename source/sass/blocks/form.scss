@@ -42,7 +42,15 @@
 }
 
 .form__input[placeholder]:invalid {
-  outline: solid 2px #ff8282;
+  outline: solid 2px $error;
+}
+
+.form__contact-input[placeholder]:focus + .form__input-icon {
+  fill: $green-leaf;
+}
+
+.form__contact-input[placeholder]:invalid + .form__input-icon {
+  fill: $error;
 }
 
 .form__fieldset {
@@ -67,7 +75,7 @@
   margin: 0 auto;
   padding: 0 19px 0 19px;
   position: absolute;
-  top: -17px;
+  top: -14px;
   left: 0;
   right: 0;
   font-size: 24px;
@@ -78,7 +86,7 @@
 
 .form__legend-contact {
   width: 182px;
-  left: -97px;
+  left: -99px;
 }
 
 .form__legend-comment {
@@ -181,6 +189,7 @@
 }
 
 .form__contact-item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -193,6 +202,13 @@
 
 .form__contact-input {
   flex-grow: 1;
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 15px;
+  left: 246px;
+  fill: $greyish-brown;
 }
 
 .form__message__wrapper {
@@ -229,6 +245,27 @@
   width: 28px;
   height: 28px;
   border: 1px solid $border-d;
+}
+
+.form__option-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 5px;
+  top: 3px;
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.form__option-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: 9px;
+  top: 4px;
+  background-color: $green-leaf;
 }
 
 .form__option-radio + label::before {
@@ -350,6 +387,18 @@
     padding-right: 17px;
   }
 
+  .form__input-icon {
+    left: 595px;
+  }
+
+  .form__input-mail[placeholder] {
+    padding-left: 25px;
+  }
+
+  .form__icon-mail {
+    top: 20px;
+  }
+
   .form__message {
     padding-top: 87px;
   }
@@ -384,6 +433,18 @@
   .form__option-radio + label::before {
     left: 29px;
     top: -6px;
+  }
+
+  .form__option-checkbox:checked + label::after {
+    left: 12px;
+    top: 8px;
+  }
+
+  .form__option-radio:checked + label::after {
+    width: 18px;
+    height: 18px;
+    left: 40px;
+    top: 5px;
   }
 
   .form__send-indents {
@@ -511,6 +572,14 @@
 
   .form__contact-item {
     width: 570px;
+  }
+
+  .form__input-icon {
+    left: 532px;
+  }
+
+  .form__input-mail[placeholder] {
+    padding-left: 25px;
   }
 
   .form__textarea {
