@@ -5,6 +5,7 @@
 
 .page-footer__logo {
   margin-bottom: 29px;
+  position: relative;
   display: block;
   text-align: center;
 }
@@ -15,6 +16,10 @@
 
 .page-footer__logo:active {
   opacity: 0.6;
+}
+
+.page-footer__logo-image:hover {
+  fill: $black-three;
 }
 
 .page-footer__social {
@@ -28,13 +33,17 @@
 
 .page-footer__social-list {
   @include list-reset;
-  width: 130px;
+  width: 136px;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-footer__catalog {
+  padding-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -53,11 +62,36 @@
 
   .page-footer__social {
     border: none;
-    width: 120px;
+    margin-left: 22px;
+  }
+
+  .page-footer__social-list {
+    width: 128px;
+  }
+
+  .page-footer__social-vk {
+    width: 40px;
+    height: 20px;
+  }
+
+  .page-footer__social-insta {
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-footer__social-fb {
+    width: 25px;
+    height: 28px;
+  }
+
+  .page-footer__insta-inner {
+    width: 24px;
+    height: 24px;
   }
 
   .page-footer__logo {
     margin: 0;
+    margin-top: 6px;
   }
 }
 
