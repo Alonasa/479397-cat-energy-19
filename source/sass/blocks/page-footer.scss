@@ -53,7 +53,7 @@
 
   .page-footer__wrapper {
     width: 708px;
-    min-height: 150px;
+    padding: 35px 0 38px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -99,5 +99,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1220px;
+    padding: 35px 0 35px;
   }
 }
