@@ -16,6 +16,14 @@
   background-color: $green-leaf;
 }
 
+.button--green:hover {
+  background-color: $grass;
+}
+
+.button--green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button__grey {
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
@@ -26,6 +34,14 @@
   background-color: $grey-back;
   border: none;
   color: $greyish-brown;
+}
+
+.button__grey-background:hover {
+  background-color: $grey-b;
+}
+
+.button__grey-background:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $tablet-width) {

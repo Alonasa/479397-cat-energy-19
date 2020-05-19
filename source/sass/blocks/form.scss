@@ -173,6 +173,11 @@
   align-items: center;
 }
 
+.form__problem:active,
+.form__additional-item:active {
+  opacity: 0.3;
+}
+
 .form__problem:not(:last-of-type),
 .form__additional-item:not(:last-of-type) {
   padding-bottom: 22px;
@@ -240,8 +245,6 @@
 .form__additional-item label {
   position: relative;
   display: block;
-  cursor: pointer;
-  user-select: none;
 }
 
 .form__option-checkbox + label::before,
@@ -253,6 +256,11 @@
   width: 28px;
   height: 28px;
   border: 1px solid $border-d;
+}
+
+.form__option-checkbox:hover + label::before,
+.form__option-radio:hover + label::before {
+  border-color: $border-a;
 }
 
 .form__option-checkbox:checked + label::after {
@@ -315,6 +323,8 @@
   .form__label {
     font-size: $font-20;
     color: $black;
+    cursor: pointer;
+    user-select: none;
   }
 
   .form__input[placeholder],
