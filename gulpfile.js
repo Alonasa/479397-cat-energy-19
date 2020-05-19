@@ -13,6 +13,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+var htmlmin = require('gulp-htmlmin');
 var include = require("posthtml-include");
 var del = require("del");
 var server = require("browser-sync").create();
@@ -69,6 +70,9 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+  }))
   .pipe(gulp.dest("build"));
 });
 
