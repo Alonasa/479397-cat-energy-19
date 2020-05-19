@@ -27,6 +27,14 @@
   border-bottom: 1px solid $border-d;
 }
 
+.page-footer__social-link {
+  fill: $grey;
+}
+
+.page-footer__social-link:hover {
+  fill: $green-leaf;
+}
+
 .page-footer__social-link:active {
   opacity: 0.3;
 }
@@ -53,7 +61,7 @@
 
   .page-footer__wrapper {
     width: 708px;
-    min-height: 150px;
+    padding: 35px 0 38px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -99,5 +107,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1220px;
+    padding: 38px 0;
   }
 }

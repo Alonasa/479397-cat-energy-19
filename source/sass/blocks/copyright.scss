@@ -1,33 +1,35 @@
 .copyright {
   width: 280px;
-  min-height: 76px;
+  padding: 10px 0;
   font-size: $font-16;
   font-family: "Arial", sans-serif;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .copyright__developer-image {
   fill: $grey;
 }
 
-.copyright__developer-image:hover {
-  fill: $green-leaf;
-}
-
 .copyright__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  fill: $grey;
   color: inherit;
   text-decoration: none;
 }
 
-.copyright__link:hover {
+.copyright__link:hover svg {
   fill: $green-leaf;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
+    padding: 0;
   }
 }

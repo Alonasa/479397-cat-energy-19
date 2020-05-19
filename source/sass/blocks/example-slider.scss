@@ -78,10 +78,10 @@
   }
 
   .example-slider__list {
+    min-height: 497px;
     margin-top: -184px;
     position: relative;
     overflow: hidden;
-    min-height: 497px;
   }
 
   .example-slider__item {
@@ -93,15 +93,15 @@
   }
 
   .example-slider__resize {
-    overflow: hidden;
-    z-index: 3;
     width: 338px;
     height: auto;
+    overflow: hidden;
+    z-index: 3;
   }
 
   .example-slider__picture-resize {
-    position: relative;
     width: 690px;
+    position: relative;
     height: auto;
     display: block;
   }
@@ -119,9 +119,9 @@
   }
 
   .example-slider__navigation {
-    @include indents-reset;
     width: 430px;
     height: 6px;
+    padding: 0;
     position: relative;
     border: none;
     background-color: $slider-back;
@@ -130,7 +130,7 @@
 
   .example-slider__buttons {
     padding-bottom: 4px;
-    position: unset;
+    position: static;
     font-size: $font-20;
     border-bottom: 1px dotted $border-d;
   }
