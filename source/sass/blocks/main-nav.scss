@@ -18,6 +18,14 @@
   border-top: 1px solid $border-c;
 }
 
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
@@ -49,14 +57,6 @@
 
   .main-nav__link-main--active {
     border-bottom: 2px solid $green-leaf;
-  }
-
-  .main-nav__link:hover {
-    opacity: 0.6;
-  }
-
-  .main-nav__link:active {
-    opacity: 0.3;
   }
 }
 
