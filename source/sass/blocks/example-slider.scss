@@ -19,7 +19,7 @@
   display: none;
 }
 
-.example-slider--choosen {
+.example-slider__choosen {
   display: block;
 }
 
@@ -68,7 +68,7 @@
   background-color: $white;
 }
 
-.example-slider--checked {
+.example-slider__checked {
   background-color: $green-leaf;
 }
 
@@ -160,7 +160,7 @@
     display: none;
   }
 
-  .example-slider--checked {
+  .example-slider__checked {
     display: none;
   }
 
