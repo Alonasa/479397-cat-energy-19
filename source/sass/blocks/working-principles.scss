@@ -28,7 +28,7 @@
   height: 60px;
   position: absolute;
   content: "";
-  top: -2px;
+  top: -3px;
   left: 0;
   background-color: $green-leaf;
 }
@@ -78,6 +78,10 @@
     top: -79px;
     right: 23px;
     z-index: -1;
+  }
+
+  .working-principles__item:nth-child(1)::after {
+    right: 18px;
   }
 
   .working-principles__item::before {
