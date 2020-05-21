@@ -30,18 +30,21 @@
 
 .example-slider__buttons {
   position: absolute;
-  top: -3px;
+  top: -7px;
   font-size: $font-16;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .example-slider__before {
-  left: 63px;
+  left: 57px;
 }
 
 .example-slider__after {
-  left: 221px;
+  left: 215px;
 }
 
 .example-slider__navigation {
@@ -67,6 +70,10 @@
 
 .example-slider--checked {
   background-color: $green-leaf;
+}
+
+.example-slider__toggle {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,7 +138,7 @@
   }
 
   .example-slider__buttons {
-    padding-bottom: 4px;
+    padding: 0;
     position: static;
     font-size: $font-20;
     border-bottom: 1px dotted $border-d;
@@ -160,6 +167,8 @@
   .example-slider__toggle {
     width: 8px;
     height: 8px;
+    padding: 4px;
+    display: block;
     position: absolute;
     left: 201px;
     top: -14px;
