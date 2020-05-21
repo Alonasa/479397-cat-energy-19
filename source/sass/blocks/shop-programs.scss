@@ -56,22 +56,44 @@
   padding: 18px 0 22px;
   font-family: "Arial", sans-serif;
   border-bottom: 1px solid $border-d;
+  margin-bottom: 16px;
 }
 
 .shop-programs__catalog {
+  position: relative;
   font-size: $font-16;
   text-decoration: none;
   text-transform: uppercase;
   color: $black-three;
 }
 
-.shop-programs__catalog:active {
+.shop-programs__catalog span {
+  margin-right: 13px;
+}
+
+.shop-programs__catalog:active,
+.shop-programs__catalog:active .shop-programs__image-hover {
   opacity: 0.3;
 }
 
 .shop-programs__item-image {
-  margin-left: 7px;
-  margin-top: 7px;
+  position: absolute;
+  top: 8px;
+}
+
+.shop-programs__image-hover {
+  width: 40px;
+  top: 8px;
+  right: -37px;
+  display: none;
+}
+
+.shop-programs__catalog:hover .shop-programs__item-image {
+  display: none;
+}
+
+.shop-programs__catalog:hover .shop-programs__image-hover {
+  display: block;
 }
 
 .shop-programs__name-mass {
@@ -111,16 +133,12 @@
     border: none;
   }
 
-  .shop-programs__item-image {
-    margin-left: 20px;
-    margin-top: -4px;
-    vertical-align: middle;
+  .shop-programs__catalog span {
+    margin-right: 23px;
   }
 
-  .shop-programs__catalog:hover .shop-programs__item-image {
-    width: 38px;
-    height: 12px;
-    margin-left: 14px;
+  .shop-programs__item-image {
+    top: 10px;
   }
 
   .shop-programs__name-slimming::after {
