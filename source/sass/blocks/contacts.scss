@@ -61,21 +61,29 @@
   position: absolute;
   top: 76px;
   left: 0;
+  z-index: -1;
 }
 
 .contacts__map-nojs {
   display: block;
 }
 
-.contacts__map-hidden::after {
-  width: 55px;
+.contacts__wrapper::after {
+  width: 62px;
   height: 53px;
+  margin: auto;
+  display: none;
   position: absolute;
   content: "";
-  top: 49%;
-  left: 40%;
+  top: 253px;
+  left: 0;
+  right: 0;
   background: url("../img/map-pin.png") no-repeat;
   background-size: cover;
+}
+
+.contacts__nojs .contacts__wrapper::after {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -131,11 +139,10 @@
     height: 400px;
   }
 
-  .contacts__map-hidden::after {
-    width: 113px;
+  .contacts__wrapper::after {
+    width: 124px;
     height: 106px;
-    top: 38%;
-    left: 42%;
+    top: 348px;
     background: url("../img/map-pin.png") no-repeat;
   }
 }
@@ -174,8 +181,9 @@
     top: 0;
   }
 
-  .contacts__map-hidden::after {
-    top: 149px;
-    left: 998px;
+  .contacts__wrapper::after {
+    top: 55px;
+    left: 50%;
+    margin-left: 603px;
   }
 }
