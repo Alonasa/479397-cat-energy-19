@@ -55,8 +55,8 @@ gulp.task("sprite", function () {
   .pipe(svgstore({
     inlineSvg: true
   }))
- .pipe(rename("sprite.svg"))
- .pipe(gulp.dest("build/img"));
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task('minjs', function() {

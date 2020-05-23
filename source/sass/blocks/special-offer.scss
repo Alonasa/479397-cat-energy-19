@@ -1,9 +1,17 @@
 .special-offer {
-  background-color: $green-leaf;
+  width: 280px;
+  min-height: 289px;
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat $green-leaf;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat $green-leaf;
+    background-size: cover;
+  }
 }
 
 .special-offer__gift {
@@ -26,11 +34,19 @@
   color: $white;
 }
 
-.special-offer__picture {
-  line-height: 0;
-}
-
 @media (min-width: $tablet-width) {
+  .special-offer {
+    width: 708px;
+    min-height: 200px;
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat $green-leaf;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat $green-leaf;
+      background-size: cover;
+    }
+  }
+
   .special-offer__header {
     padding-top: 71px;
     left: 423px;
@@ -46,7 +62,15 @@
 @media (min-width: $desktop-width) {
   .special-offer {
     width: 245px;
+    min-height: 288px;
     margin-top: 92px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat $green-leaf;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat $green-leaf;
+      background-size: cover;
+    }
   }
 
   .special-offer__header {

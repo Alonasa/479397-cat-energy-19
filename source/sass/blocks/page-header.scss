@@ -49,7 +49,7 @@
   display: block;
 }
 
-.page-header--opened .page-header__toggle--open {
+.page-header--opened .page-header__toggle-open {
   display: block;
 }
 
@@ -57,11 +57,11 @@
   border-bottom: 1px solid $border-c;
 }
 
-.page-header--closed .page-header__toggle--open {
+.page-header--closed .page-header__toggle-open {
   display: none;
 }
 
-.page-header--closed .main-nav {
+.page-header--closed .page-header__nav {
   display: none;
 
   &--active {
@@ -73,7 +73,7 @@
   display: none;
 }
 
-.page-header--nojs .main-nav {
+.page-header--nojs .page-header__nav {
   display: block;
 }
 
