@@ -22,13 +22,14 @@
 
 .form__pet-data {
   @include indents-reset;
-  margin-top: 10px;
+  margin-top: 8px;
   border: none;
 }
 
 .form__input[placeholder],
 .form__textarea[placeholder] {
   padding: 10px 13px;
+  margin-top: 2px;
   font-size: 16px;
   font-family: inherit;
   text-transform: uppercase;
@@ -130,13 +131,13 @@ input[type="radio"]:focus + .form__label {
 }
 
 .form__personal-data {
-  padding-bottom: 9px;
+  padding-bottom: 11px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .form__pet-info {
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -212,7 +213,7 @@ input[type="radio"]:focus + .form__label {
 }
 
 .form__indents {
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .form__contact-list {
@@ -389,7 +390,7 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__pet-info {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .form__problem:not(:last-of-type) {
@@ -398,7 +399,7 @@ input[type="radio"]:focus + .form__label {
 
   .form__radio-border {
     border: none;
-    margin-top: 44px;
+    margin-top: 42px;
   }
 
   .form__personal-list {
@@ -444,7 +445,7 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__indents {
-    margin-top: 66px;
+    margin-top: 63px;
   }
 
   .form__contact-data {
@@ -602,7 +603,7 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__pet-info {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .form__pet-problem {
@@ -628,11 +629,11 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__indents {
-    margin-top: 67px;
+    margin-top: 66px;
   }
 
   .form__contact-data {
-    margin-top: 42px;
+    margin-top: 39px;
   }
 
   .form__contact-list {
