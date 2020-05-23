@@ -5,7 +5,7 @@
 .form__description {
   width: 230px;
   margin: 0;
-  padding: 10px 0 39px;
+  padding: 10px 0 19px;
   text-transform: uppercase;
 }
 
@@ -13,10 +13,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.form__consultation {
+  margin-top: 10px;
 }
 
 .form__pet-data {
   @include indents-reset;
+  margin-top: 10px;
   border: none;
 }
 
@@ -88,19 +94,16 @@ input[type="radio"]:focus + .form__label {
   content: "";
   width: 50vw;
   height: 3px;
-  top: 0;
+  top: 14px;
   left: 50%;
   background-color: $green-leaf;
+  z-index: -1;
 }
 
-
 .form__legend {
-  margin: 0 auto;
-  padding: 0 19px 0 19px;
-  position: absolute;
-  top: -14px;
-  left: 0;
-  right: 0;
+  margin: 0;
+  padding-right: 19px;
+  padding-bottom: 34px;
   font-size: 24px;
   line-height: 1;
   font-weight: normal;
@@ -109,17 +112,14 @@ input[type="radio"]:focus + .form__label {
 
 .form__legend-contact {
   width: 182px;
-  left: -99px;
 }
 
 .form__legend-comment {
   width: 124px;
-  left: -158px;
 }
 
 .form__legend-additional {
   width: 145px;
-  left: -137px;
 }
 
 .form__list {
@@ -212,13 +212,11 @@ input[type="radio"]:focus + .form__label {
 }
 
 .form__indents {
-  margin-top: 42px;
-  padding-top: 45px;
+  margin-top: 28px;
 }
 
 .form__contact-list {
   min-height: 104px;
-  padding-top: 23px;
 }
 
 .form__contact-item {
@@ -317,7 +315,7 @@ input[type="radio"]:focus + .form__label {
 }
 
 .form__send-indents {
-  margin: 38px auto 15px;
+  margin: 40px auto 15px;
 }
 
 .form__required {
@@ -341,7 +339,7 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__consultation {
-    margin-top: 46px;
+    margin-top: 32px;
   }
 
   .form__wrapper-big {
@@ -361,16 +359,33 @@ input[type="radio"]:focus + .form__label {
     font-size: $font-20;
   }
 
-  .form__fieldset {
-    border-top: 3px solid $green-leaf;
+  .form__fieldset::before {
+    position: absolute;
+    content: "";
+    width: 64vw;
+    height: 3px;
+    top: 22px;
+    left: 36%;
+    background-color: $green-leaf;
   }
 
-  .form__fieldset::before {
-    display: none;
+  .form__fieldset::after {
+    position: absolute;
+    content: "";
+    width: 10vw;
+    height: 3px;
+    top: 22px;
+    left: 0;
+    background-color: $green-leaf;
+    z-index: -5;
   }
 
   .form__pet-label {
     padding-right: 20px;
+  }
+
+  .form__pet-data {
+    margin-top: 14px;
   }
 
   .form__pet-info {
@@ -383,7 +398,7 @@ input[type="radio"]:focus + .form__label {
 
   .form__radio-border {
     border: none;
-    margin: 44px 0;
+    margin-top: 44px;
   }
 
   .form__personal-list {
@@ -397,11 +412,22 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__legend {
-    padding: 0 41px 0 39px;
-    top: -25px;
-    left: -116px;
+    padding: 0;
+    padding-bottom: 75px;
+    padding-right: 40px;
+    position: relative;
     font-size: $font-36;
-    text-align: center;
+  }
+
+  .form__legend::before {
+    position: absolute;
+    content: "";
+    width: 10vw;
+    height: 20px;
+    top: 12px;
+    left: -39px;
+    background-color: inherit;
+    z-index: -1;
   }
 
   .form__legend-contact {
@@ -410,21 +436,19 @@ input[type="radio"]:focus + .form__label {
 
   .form__legend-comment {
     width: 180px;
-    left: -448px;
   }
 
   .form__legend-additional {
     width: 215px;
-    left: -415px;
+    padding-bottom: 54px;
   }
 
   .form__indents {
-    margin-top: 87px;
-    padding-top: 64px;
+    margin-top: 66px;
   }
 
   .form__contact-data {
-    margin-top: 53px;
+    margin-top: 75px;
   }
 
   .form__contact-list {
@@ -449,10 +473,6 @@ input[type="radio"]:focus + .form__label {
 
   .form__icon-mail {
     top: 20px;
-  }
-
-  .form__message {
-    padding-top: 87px;
   }
 
   .form__textarea {
@@ -536,11 +556,12 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__consultation {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   .form__top-wrapper {
     margin: 0 auto;
+    margin-top: 10px;
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
@@ -566,8 +587,14 @@ input[type="radio"]:focus + .form__label {
     padding-right: 45px;
   }
 
+  .form__fieldset::before {
+    width: 80vw;
+    left: 20%;
+  }
+
   .form__pet-data {
     width: 570px;
+    margin: 0;
   }
 
   .form__pet-label {
@@ -597,24 +624,15 @@ input[type="radio"]:focus + .form__label {
   }
 
   .form__legend {
-    left: -706px;
     text-align: left;
   }
 
-  .form__legend-comment {
-    left: -1038px;
-  }
-
-  .form__legend-additional {
-    left: -1005px;
-  }
-
   .form__indents {
-    margin-top: 89px;
+    margin-top: 67px;
   }
 
   .form__contact-data {
-    margin-top: 63px;
+    margin-top: 42px;
   }
 
   .form__contact-list {
