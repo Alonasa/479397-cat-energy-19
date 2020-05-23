@@ -206,25 +206,22 @@
   .example-slider {
     padding: 0;
     margin-top: 159px;
-    width: 666px;
     background: linear-gradient(to right, $grey-back 57.2%, $light 57.2%);
   }
 
   .example-slider__wrapper {
-    width: 706px;
+    width: 666px;
     padding-bottom: 0;
     margin: 0;
   }
 
   .example-slider__list {
-    margin-top: -1px;
+    padding-bottom: 55px;
+    margin-top: -190px;
     position: relative;
-    overflow: visible;
-    min-height: 329px;
   }
 
   .example-slider__item {
-    margin-top: -190px;
     background: linear-gradient(to bottom, $white 191px, $grey-back 191px);
   }
 
