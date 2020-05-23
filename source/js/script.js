@@ -12,3 +12,14 @@ if (navMain.classList.contains('page-header--closed')) {
   navMain.classList.remove('page-header--opened');
 }
 });
+
+var map = document.querySelector('.contacts__map-hidden');
+var frame = document.querySelector('.contacts__map');
+
+map.classList.remove('contacts__map-nojs');
+frame.classList.remove('contacts__map-frame');
+
+
+var contactsNojs = document.querySelector('.contacts__nojs');
+
+contactsNojs.classList.remove('contacts__nojs');

@@ -5,7 +5,7 @@
 .form__description {
   width: 230px;
   margin: 0;
-  padding: 10px 0 39px;
+  padding: 10px 0 19px;
   text-transform: uppercase;
 }
 
@@ -13,10 +13,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.form__consultation {
+  margin-top: 10px;
 }
 
 .form__pet-data {
   @include indents-reset;
+  margin-top: 10px;
   border: none;
 }
 
@@ -35,6 +41,11 @@
   padding-right: 38px;
 }
 
+input[type="checkbox"]:focus + .form__label,
+input[type="radio"]:focus + .form__label {
+  outline: 1px auto $green-leaf;
+}
+
 .form__input[placeholder]:hover:not(:invalid),
 .form__textarea[placeholder]:hover:not(:invalid) {
   border-color: $border-d;
@@ -49,12 +60,26 @@
   outline: solid 2px $error;
 }
 
-.form__contact-input[placeholder]:focus + .form__input-icon {
-  fill: $green-leaf;
+.form__input[placeholder]:invalid:hover {
+  outline: solid 1px $border-d;
 }
 
 .form__contact-input[placeholder]:invalid + .form__input-icon {
   fill: $error;
+}
+
+.form__contact-input[placeholder]:invalid:hover + .form__input-icon {
+  fill: $black;
+}
+
+.form__contact-input[placeholder]:focus + .form__input-icon,
+.form__contact-input[placeholder]:invalid:focus + .form__input-icon {
+  fill: $green-leaf;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: $greyish-brown;
 }
 
 .form__fieldset {
@@ -69,19 +94,16 @@
   content: "";
   width: 50vw;
   height: 3px;
-  top: 0;
+  top: 14px;
   left: 50%;
   background-color: $green-leaf;
+  z-index: -1;
 }
 
-
 .form__legend {
-  margin: 0 auto;
-  padding: 0 19px 0 19px;
-  position: absolute;
-  top: -14px;
-  left: 0;
-  right: 0;
+  margin: 0;
+  padding-right: 19px;
+  padding-bottom: 34px;
   font-size: 24px;
   line-height: 1;
   font-weight: normal;
@@ -90,17 +112,14 @@
 
 .form__legend-contact {
   width: 182px;
-  left: -99px;
 }
 
 .form__legend-comment {
   width: 124px;
-  left: -158px;
 }
 
 .form__legend-additional {
   width: 145px;
-  left: -137px;
 }
 
 .form__list {
@@ -193,13 +212,11 @@
 }
 
 .form__indents {
-  margin-top: 42px;
-  padding-top: 45px;
+  margin-top: 28px;
 }
 
 .form__contact-list {
   min-height: 104px;
-  padding-top: 23px;
 }
 
 .form__contact-item {
@@ -298,7 +315,7 @@
 }
 
 .form__send-indents {
-  margin: 38px auto 15px;
+  margin: 40px auto 15px;
 }
 
 .form__required {
@@ -322,7 +339,7 @@
   }
 
   .form__consultation {
-    margin-top: 46px;
+    margin-top: 32px;
   }
 
   .form__wrapper-big {
@@ -342,16 +359,33 @@
     font-size: $font-20;
   }
 
-  .form__fieldset {
-    border-top: 3px solid $green-leaf;
+  .form__fieldset::before {
+    position: absolute;
+    content: "";
+    width: 64vw;
+    height: 3px;
+    top: 22px;
+    left: 36%;
+    background-color: $green-leaf;
   }
 
-  .form__fieldset::before {
-    display: none;
+  .form__fieldset::after {
+    position: absolute;
+    content: "";
+    width: 10vw;
+    height: 3px;
+    top: 22px;
+    left: 0;
+    background-color: $green-leaf;
+    z-index: -5;
   }
 
   .form__pet-label {
     padding-right: 20px;
+  }
+
+  .form__pet-data {
+    margin-top: 14px;
   }
 
   .form__pet-info {
@@ -364,7 +398,7 @@
 
   .form__radio-border {
     border: none;
-    margin: 44px 0;
+    margin-top: 44px;
   }
 
   .form__personal-list {
@@ -378,11 +412,22 @@
   }
 
   .form__legend {
-    padding: 0 41px 0 39px;
-    top: -25px;
-    left: -116px;
+    padding: 0;
+    padding-bottom: 75px;
+    padding-right: 40px;
+    position: relative;
     font-size: $font-36;
-    text-align: center;
+  }
+
+  .form__legend::before {
+    position: absolute;
+    content: "";
+    width: 10vw;
+    height: 20px;
+    top: 12px;
+    left: -39px;
+    background-color: inherit;
+    z-index: -1;
   }
 
   .form__legend-contact {
@@ -391,21 +436,19 @@
 
   .form__legend-comment {
     width: 180px;
-    left: -448px;
   }
 
   .form__legend-additional {
     width: 215px;
-    left: -415px;
+    padding-bottom: 54px;
   }
 
   .form__indents {
-    margin-top: 87px;
-    padding-top: 64px;
+    margin-top: 66px;
   }
 
   .form__contact-data {
-    margin-top: 53px;
+    margin-top: 75px;
   }
 
   .form__contact-list {
@@ -430,10 +473,6 @@
 
   .form__icon-mail {
     top: 20px;
-  }
-
-  .form__message {
-    padding-top: 87px;
   }
 
   .form__textarea {
@@ -517,11 +556,12 @@
   }
 
   .form__consultation {
-    margin-top: 35px;
+    margin-top: 25px;
   }
 
   .form__top-wrapper {
     margin: 0 auto;
+    margin-top: 10px;
     width: 1220px;
     display: flex;
     flex-wrap: wrap;
@@ -540,14 +580,21 @@
   .form__textarea[placeholder] {
     padding: 10px 16px;
     font-size: $font-20;
+    text-overflow: ellipsis;
   }
 
   .form__contact-input[placeholder] {
     padding-right: 45px;
   }
 
+  .form__fieldset::before {
+    width: 80vw;
+    left: 20%;
+  }
+
   .form__pet-data {
     width: 570px;
+    margin: 0;
   }
 
   .form__pet-label {
@@ -577,24 +624,15 @@
   }
 
   .form__legend {
-    left: -706px;
     text-align: left;
   }
 
-  .form__legend-comment {
-    left: -1038px;
-  }
-
-  .form__legend-additional {
-    left: -1005px;
-  }
-
   .form__indents {
-    margin-top: 89px;
+    margin-top: 67px;
   }
 
   .form__contact-data {
-    margin-top: 63px;
+    margin-top: 42px;
   }
 
   .form__contact-list {
